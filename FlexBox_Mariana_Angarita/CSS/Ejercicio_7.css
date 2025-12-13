@@ -17,24 +17,35 @@ h1{
     font-family: Arial, sans-serif;
 }
 
-nav{
+nav {
     background-color: #cccccc;
     color:#767676;
     box-sizing: border-box;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;     
     padding: 10px;
     gap: 10px;
-
+  
 }
 
-/*Quería que mis imágenes quedaran totalmente alineadas vertical y horizontalmente dentro del div, he visto en internet que podía hacer un "flexbox anidado" donde el nav con su propiedad flex alinee todos los divs a la izquierda y si al div le proporcionaba también display:flex; podia alinear vertical y horizontalmente a las imágenes */
-div{
+nav.primera_fila {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+}
+
+nav.segunda_fila {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+div {
+    width: 140px; 
     box-sizing: border-box;
     padding: 5px;
-    width: 130px;
     border: 1px dashed #888;
     display: flex;            
     justify-content: center;  
@@ -42,11 +53,15 @@ div{
     
 }
 
+.primera_fila div{
+    flex-shrink: 0;
+}
+
 div:hover{
     background-color: #555555;
 
 }
 
-img{
+img {
     width: 100%;
 }
