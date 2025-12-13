@@ -19,21 +19,21 @@ h1{
 
 nav{
     background-color: #cccccc;
-    width: 30%;
     color:#767676;
     box-sizing: border-box;
     display: flex;
-
 }
-
-div{
+img{
     box-sizing: border-box;
+    width: 40%;
+}
+div{
+    
     padding: 10px;
-   
 }
 
 div:hover{
     background-color: #555555;
-    color:#9d9d9d;
+   
 
 }
