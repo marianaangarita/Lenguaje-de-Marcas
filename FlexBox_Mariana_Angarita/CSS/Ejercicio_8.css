@@ -1,38 +1,61 @@
+
+
 #viajes{
     box-sizing: border-box;
     border: 2px solid black;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    padding: 10px;
 }
-   
+
     
 h1{
     color:white;
-    background-color: #333334;
+    background-color: black;
     box-sizing: border-box;
     margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 15px;
     text-align: end;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400px;
+    font-size: 40px;
 }
-
+h2{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
 .noticia{
-    background-color: #cccccc;
-    color:#767676;
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
-    justify-content: flex-start;     
-    padding: 10px;
-    gap: 10px;
-
+    justify-content: center;     
+    
 }
 
+#polonia{
+    background-color: #7ebdbb;
+}
+#oporto{
+    background-color: #b6ebb3;
+}
+#malta{
+    background-color: #bacee3;
+}
 
+#polonia,#oporto,#malta {
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+p {
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400px;
+}
 
 img{
     width: 100%;
+    height: 35%;
 }
