@@ -1,8 +1,8 @@
 div{
     text-align: center;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
     gap: 5px;
+    grid-template-columns: 200px 1fr 2fr;
 }
 
 p{
