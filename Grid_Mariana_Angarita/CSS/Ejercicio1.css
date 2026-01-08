@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+p{
+    background-color: #6a7c88;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: large;
+}
