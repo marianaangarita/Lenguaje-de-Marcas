@@ -2,6 +2,9 @@ div{
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(3, 1fr);
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 p{
