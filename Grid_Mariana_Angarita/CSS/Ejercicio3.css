@@ -1,0 +1,23 @@
+div{ 
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px 150px 150px;
+    justify-content: center;
+}
+
+p{
+    background-color: #6a7c88;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+#celda_1{
+    grid-column: 1/ 4
+}
+
+#celda_2{
+    grid-row: 2/4;
+}
