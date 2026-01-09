@@ -1,0 +1,13 @@
+div{ 
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+.one {
+    background-color: #f4d5ab;
+    color: #da5218;
+    font-size: large;
+    text-align: center;
+}
+
