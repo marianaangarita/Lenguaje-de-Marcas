@@ -1,0 +1,44 @@
+#celda_1{
+   grid-area: celda_1;
+}
+
+#celda_2{
+    grid-area: celda_2;
+}
+
+#celda_3{
+    grid-area: celda_3;
+}
+
+#celda_4{
+    grid-area: celda_4;
+}
+
+#celda_5{
+    grid-area: celda_5;
+}
+
+#celda_6{
+    grid-area: celda_6;
+}
+
+div{ 
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    grid-template-columns: 100px 150px 150px;
+    grid-template-areas:
+    'celda_1 celda_1 celda_1' 
+    'celda_2 celda_3 celda_4'
+    'celda_2 celda_5 celda_6';
+}
+
+p{
+    background-color: #6a7c88;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+}
+
