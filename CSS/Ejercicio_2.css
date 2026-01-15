@@ -1,11 +1,29 @@
-@media (min-width: 1024px){
+.columna{
+    background-color: aquamarine;
+    border: 2px solid black;
 
+ }
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1024px){
+.contenedor{
+    width: 33%;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
+.contenedor{
+    width: 50%;
+}
 }
 
 @media (max-width: 767px){
-    
+.contenedor{
+    width: 100%;
+}
+
 }

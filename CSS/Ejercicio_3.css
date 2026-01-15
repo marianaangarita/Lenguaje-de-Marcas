@@ -1,0 +1,27 @@
+
+
+.menu{
+    background-color: lightblue;
+    display: flex;
+    padding: 10px;
+    
+}
+ul {
+    gap: 20px;
+}
+li{
+    padding: 10px;
+}
+@media (min-width: 600px){
+menu{
+    flex-direction: row;
+}
+}
+
+@media (max-width: 599px){
+
+.menu{
+    background-color: lightgreen;
+    flex-direction: column;
+}
+}
