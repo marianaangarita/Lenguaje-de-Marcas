@@ -1,0 +1,23 @@
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.galeria img{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width:601px) and (max-width:1024px){
+.galeria img{
+    width: 50%;
+}
+}
+
+@media (min-width:1025px) {
+.galeria img{
+    width: 33.333%;
+}
+}

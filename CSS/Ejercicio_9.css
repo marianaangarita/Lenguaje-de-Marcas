@@ -1,0 +1,12 @@
+
+@media(min-width:600px){
+.hamburguesa{
+    display: none;
+}
+}
+
+@media(max-width:599px){
+.menu{
+    display: none;
+}
+}
