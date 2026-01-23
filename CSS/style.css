@@ -16,3 +16,19 @@ img{
 span{
     color: white;
 }
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    
+}
