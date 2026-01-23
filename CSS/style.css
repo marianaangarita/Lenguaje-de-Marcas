@@ -1,6 +1,9 @@
-header{
+body{
     background-color: black;
-    display: grid;
+}
+header{
+    display: flex;
+    flex-direction: row;
 }
 
 img{
