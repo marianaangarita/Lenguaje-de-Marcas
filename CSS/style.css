@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+*{
+    color: white;
+}
 header{
     display: flex;
     flex-direction: row;
