@@ -1,7 +1,9 @@
+
 body{
+    color: white;
     background-color: black;
 }
-*{
+span{
     color: white;
 }
 header{
@@ -11,15 +13,13 @@ header{
 
 img{
     width: 100px;
-    color: white;
-}
-span{
-    color: white;
 }
 
 main{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 4fr;
+    gap: 1rem;
 }
 .info{
     display: flex;
@@ -27,8 +27,12 @@ main{
     justify-content: space-between;
 }
 
-.columna{
+footer{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    background-color: #a237a2;
+}
+
+.canciones, .barra_lateral{
+    background-color: #121212;
 }
