@@ -1,51 +1,19 @@
-@font-face {
-  font-family: 'FuenteSpotify';
-  src: url('../fonts/spotify_mix_ui_regular.otf');
-}
-
-hr{
-    width: 100%;
-}
 body{
+    color: white;
     background-color: black;
-    font-family: 'FuenteSpotify' !important;
+}
+*{
     color: white;
 }
 header{
     display: flex;
     flex-direction: row;
-    padding: 0.5rem;
-    justify-content: space-between;
 }
-#inicio{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: flex-start;
-}
-#fin{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: flex-end;
-}
-.iconos{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-.Spotify{
-    background-color: white;
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-}
+
 img{
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    color: white;
 }
-
-
 span{
     color: white;
 }
@@ -53,7 +21,6 @@ span{
 main{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
 }
 .info{
     display: flex;
@@ -61,10 +28,10 @@ main{
     justify-content: space-between;
 }
 
-.columna{
+footer{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    background-color: #a237a2;
 }
 .canciones{
     display: flex;
@@ -108,4 +75,8 @@ main{
     color: black;
     border-radius: 1rem;
     padding: 1px;  
+}
+
+.canciones, .barra_lateral{
+    background-color: #121212;
 }
