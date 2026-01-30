@@ -13,8 +13,23 @@ hr{
 header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
+#inicio{
+    display: flex;
+    justify-content: flex-start;
+}
+#fin{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
 img{
     width: 5%;
     color: white;
