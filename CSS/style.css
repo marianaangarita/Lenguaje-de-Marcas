@@ -1,17 +1,65 @@
+@font-face {
+  font-family: 'LetraSpotify';
+  src: url('../fonts/spotify_mix_ui_regular.woff2')
+}
 body{
+    font-family: 'LetraSpotify';
     color: white;
     background-color: black;
 }
-*{
-    color: white;
+.hr{
+    width: 100%;
+}
+.vertical{
+    height: 2rem;
+}
+input{
+    background-color: transparent;
+    border: 0px;
+    font-family: 'LetraSpotify';
+}
+
+.lupa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1f1f1f;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+
 }
 header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
 }
-
+.Spotify{
+    width: 8%;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+#inicio{
+    display: flex;
+    justify-content: flex-start;
+}
+#fin{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
 img{
-    width: 100px;
+    width: 100%;
+    height: auto;
     color: white;
 }
 span{
@@ -21,6 +69,7 @@ span{
 main{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 1rem;
 }
 .info{
     display: flex;
@@ -59,7 +108,7 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 6rem;
     height: 3rem;
     align-items: center;
@@ -73,7 +122,7 @@ footer{
 .boton{
     background-color: white;
     color: black;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 1px;  
 }
 
