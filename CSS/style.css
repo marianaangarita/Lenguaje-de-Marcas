@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'LetraSpotify';
+  src: url('../fonts/spotify_mix_ui_regular.woff2')
+}
 body{
+    font-family: 'LetraSpotify';
     color: white;
     background-color: black;
 }
-*{
-    color: white;
+hr{
+    width: 100%;
 }
 header{
     display: flex;
@@ -11,7 +16,7 @@ header{
 }
 
 img{
-    width: 100px;
+    width: 5%;
     color: white;
 }
 span{
@@ -21,6 +26,7 @@ span{
 main{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 1rem;
 }
 .info{
     display: flex;
