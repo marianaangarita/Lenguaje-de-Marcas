@@ -158,6 +158,7 @@ footer .boton {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1.5rem;
+    cursor: pointer;
 }
 .cuadrado img{
     border-radius: 1rem;
