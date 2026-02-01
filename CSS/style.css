@@ -144,8 +144,8 @@ footer .boton {
     justify-content: flex-end;
 }
 
-.fondoIcono img {
-    width: 60%; 
+.rrss .fondoIcono img {
+    width: 80%; 
     height: auto;
     filter: invert(1); 
     display: block;
@@ -181,7 +181,7 @@ footer .boton {
     padding: 0.5rem 3rem;
 
 }
-.canciones img{
+.canciones img {
     width: 10rem;
     height: auto;
 }
