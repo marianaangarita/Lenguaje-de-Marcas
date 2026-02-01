@@ -138,17 +138,33 @@ footer .boton {
 .rrss {
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
-    
+    gap: 1rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.fondoIcono img {
+    width: 60%; 
+    height: auto;
+    filter: invert(1); 
+    display: block;
 }
 .fondoIcono{
-   filter: invert(1);
     background-color: #292929;
     border-radius: 50%;
     width: 2.5rem;
-    height: auto;
+    height: 2.5rem;
     padding: 0.5rem;
     box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondoIcono:hover {
+    background-color: #727272;
 }
 
 .canciones,.barra_lateral {
@@ -248,6 +264,7 @@ footer .boton {
     justify-content: space-around;
     white-space: nowrap;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .rec_gris {
