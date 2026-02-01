@@ -153,6 +153,28 @@ footer .boton {
     width: 10rem;
     height: auto;
 }
+.brilloGris:hover{
+    background-color: #1f1f1f;
+    border-radius: 1rem;
+}
+.textDecoration:hover{
+    text-decoration: underline;
+}
+
+.brilloGris h3{
+    margin: 0.05rem;
+    font-weight: regular;
+}
+.brilloGris p{
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+}
+.BrilloGrisRedondo:hover{
+    background-color: #1f1f1f;
+    border-radius: 1rem;
+}
 .cuadrado, .redondo{
     display: flex;
     flex-direction: row;
@@ -160,8 +182,9 @@ footer .boton {
     gap: 1.5rem;
     cursor: pointer;
 }
+
 .cuadrado img{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 .redondo img{
     border-radius: 50%;
