@@ -12,7 +12,7 @@ body {
     color: white;
     background-color: black;
     padding: 0.6rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -53,8 +53,8 @@ header {
 .Spotify {
     width: 8%;
     height: auto;
-    filter:invert(1);
- 
+    filter: invert(1);
+
 }
 
 #inicio {
@@ -96,11 +96,6 @@ main {
     height: 100%;
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 footer {
     display: flex;
@@ -135,22 +130,23 @@ footer .boton {
     white-space: nowrap;
     cursor: pointer;
 }
+
 .rrss {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 1.5rem;
     align-items: flex-start;
     justify-content: flex-end;
 }
 
 .rrss .fondoIcono img {
-    width: 80%; 
+    width: 80%;
     height: auto;
-    filter: invert(1); 
+    filter: invert(1);
     display: block;
 }
-.fondoIcono{
+
+.fondoIcono {
     background-color: #292929;
     border-radius: 50%;
     width: 2.5rem;
@@ -167,7 +163,8 @@ footer .boton {
     background-color: #727272;
 }
 
-.canciones,.barra_lateral {
+.canciones,
+.barra_lateral {
     background-color: #121212;
     border-radius: 1rem;
     min-height: 0
@@ -179,62 +176,91 @@ footer .boton {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0.5rem 3rem;
+   
 
 }
+
 .canciones img {
     width: 10rem;
     height: auto;
 }
-.brilloGris:hover{
+
+.brilloGris {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    gap: 0.5rem;
+    width: fit-content;
+
+}
+
+.brilloGris:hover {
+    transition: background-color 0.3s ease;
     background-color: #1f1f1f;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    height: fit-content;
 }
-.brilloGris:hover .flechaVerde{
+
+.brilloGris:hover .flechaVerde {
     visibility: visible;
+
 }
-.textDecoration:hover{
+
+.textDecoration:hover {
     text-decoration: underline;
 }
 
-.brilloGris h3{
-    margin: 0.05rem;
+.brilloGris h3 {
+    margin: 0;
+    padding: 0;
     font-weight: lighter;
     font-size: medium;
 }
-.brilloGris p{
+
+.brilloGris p {
     color: #9e9e9e;
     font-size: 0.9rem;
     padding: 0;
     margin: 0;
 }
-.titulo{
+
+.titulo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
-.titulo p{
+
+.titulo p {
     font-weight: bold;
     color: #a7a7a7;
     font-size: small;
 }
-.cuadrado, .redondo{
+
+.cuadrado,
+.redondo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1.5rem;
     cursor: pointer;
     position: relative;
 }
 
-.cuadrado img{
+.cuadradoExtraGap {
+
+    padding-bottom: 5rem; 
+}
+
+.cuadrado img {
     border-radius: 0.5rem;
 }
 
-.redondo img:not(.flechaVerde){
+.redondo img:not(.flechaVerde) {
     border-radius: 50%;
 }
-.flechaVerde{
+
+.flechaVerde {
     position: absolute;
     visibility: hidden;
 }
@@ -283,10 +309,42 @@ footer .boton {
     cursor: pointer;
 }
 
-.columna p{
-    color: #a0a0a0;
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+
 }
-.copywrite{
+
+.textoColumna{
+    cursor: pointer;
+}
+
+.textoColumna:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.columna h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.columna p {
+    color: #a0a0a0;
+    margin: 0;
+    padding: 0;
+}
+
+.copywrite {
     color: #a3a3a3;
     font-size: 0.9rem;
 }
