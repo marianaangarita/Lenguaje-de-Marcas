@@ -371,6 +371,9 @@ footer .boton {
 }
 
 .rec_gris {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: #1f1f1f;
     padding: 1rem;
     border-radius: 1rem;
@@ -379,17 +382,19 @@ footer .boton {
 .rec_gris p{
     margin: 0;
     padding: 0;
+    font-size: 0.9rem;
 }
 .rec_gris h3{
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 .boton {
     background-color: white;
     color: black;
     border-radius: 2rem;
-    padding: 0.03rem 1rem;
+    padding: 0.4rem 1rem;
     white-space: nowrap;
     font-weight: bold;
     cursor: pointer;
