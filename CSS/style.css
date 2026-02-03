@@ -378,7 +378,11 @@ footer .boton {
     padding: 1rem;
     border-radius: 1rem;
 }
-
+.letras{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
 .rec_gris p{
     margin: 0;
     padding: 0;
