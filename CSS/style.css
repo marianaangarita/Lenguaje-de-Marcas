@@ -11,20 +11,48 @@ body {
     font-family: 'LetraSpotify';
     color: white;
     background-color: black;
-    padding: 0.6rem;
+    padding: 0.5rem 0.6rem;
     box-sizing: border-box;
     margin: 0;
 }
 
-.hr hr{
+.hr hr {
     width: 100%;
     background-color: #292929;
     border: none;
     border-top: 1px solid #292929;
 }
 
+.instalarRegistrar {
+    font-size: 0.9rem;
+}
+.instalarRegistrar:hover{
+    color: rgba(255, 255, 255, 0.849);
+    transform: scale(1.05);
+}
+.iconoTexto:hover{
+    color: rgba(255, 255, 255, 0.849);
+    transform: scale(1.05);
+}
 .vertical {
-    height: 2rem;
+    height: 1.5rem;
+
+}
+
+.lupaInput {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.archivoPalo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-end;
 }
 
 input {
@@ -34,44 +62,58 @@ input {
 }
 
 .lupa {
+    width: 27rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     background-color: #1f1f1f;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 0rem 1rem;
     border-radius: 2rem;
-
+    justify-content: space-between;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0.05rem;
+    justify-content: flex-end;
+    padding-left:0.5rem;
     align-items: center;
+    gap: 0.7rem;
 }
-.instalar{
+
+.instalar {
     display: flex;
     flex-direction: row;
     gap: 0.4rem;
+    align-items: center;
 }
-.Spotify {
-    width: 8%;
-    height: auto;
-    filter: invert(1);
 
+.instalar:hover {
+    color: rgba(255, 255, 255, 0.849);
+    transform: scale(1.05);
 }
+
+.Spotify {
+    width: 2.6rem;
+    height: auto;
+}
+
 
 #inicio {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
 #fin {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+    align-items: center;
 }
 
 .iconos {
@@ -80,6 +122,8 @@ header {
     gap: 1rem;
     align-items: center;
     white-space: nowrap;
+    color: #a7a7a7;
+    font-weight: bold;
 }
 
 img {
@@ -97,7 +141,7 @@ main {
     display: grid;
     grid-template-columns: 0.87fr 3fr;
     gap: 0.5rem;
-    overflow: hidden;
+    overflow: visible;
     min-height: 0;
     height: 100%;
 }
@@ -172,7 +216,7 @@ footer .boton {
 .canciones,
 .barra_lateral {
     background-color: #121212;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     min-height: 0
 }
 
@@ -182,7 +226,7 @@ footer .boton {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0.5rem 2rem;
-   
+
 
 }
 
@@ -255,7 +299,7 @@ footer .boton {
 
 .cuadradoExtraGap {
 
-    padding-bottom: 5rem; 
+    padding-bottom: 5rem;
 }
 
 .cuadrado img {
@@ -274,33 +318,51 @@ footer .boton {
 .barra_lateral {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem 1rem;
     justify-content: space-between;
 }
-.barra_superior{
+
+.barra_superior {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.avisoLegal{
+
+.barra_inferior {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.8rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.cookieLegal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.avisoLegal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
     width: 100%;
-    padding: 0 0.5rem;
+    padding-right: 0;
     box-sizing: border-box;
-    
+
 }
 
-.avisoLegal p{
+.avisoLegal p {
     margin: 0;
     padding: 0;
     color: #b3b3b3;
     font-size: 0.75rem;
     cursor: pointer;
 }
-.cookies{
+
+.cookies {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -308,7 +370,8 @@ footer .boton {
     width: fit-content;
     cursor: pointer;
 }
-.cookies p{
+
+.cookies p {
     margin: 0;
     padding: 0;
     color: white;
@@ -316,16 +379,16 @@ footer .boton {
     font-weight: regular;
 }
 
-.cookies:hover{
+.cookies:hover {
     border-color: white;
     text-decoration: underline;
 }
 
-.cookies:hover p{
+.cookies:hover p {
     color: white;
 }
 
-.espanolEspana{
+.espanolEspana {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -337,7 +400,8 @@ footer .boton {
     width: fit-content;
     cursor: pointer;
 }
-.espanolEspana p{
+
+.espanolEspana p {
     margin: 0;
     padding: 0;
     color: white;
@@ -345,15 +409,18 @@ footer .boton {
     font-weight: bold;
     white-space: nowrap;
 }
-.espanolEspana:hover{
+
+.espanolEspana:hover {
     border: 0.05rem solid rgb(243, 243, 243);
     transform: scale(1.05);
 }
+
 .contenido {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 
 .botonCrear {
@@ -363,11 +430,62 @@ footer .boton {
     border-radius: 2rem;
     width: 6rem;
     height: 3rem;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    align-content: center;
+    gap: 0.5rem;
     white-space: nowrap;
     cursor: pointer;
     font-weight: bold;
+    position: relative;
+}
+
+.botonCrear p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.botonCrear::after {
+    content: "Crea una lista, carpeta o Jam";
+    position: absolute;
+    bottom: 115%;
+    left: 20%;
+    width: max-content;
+    transform: translateX(-35%);
+    font-weight: normal;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Sombra para profundidad */
+    z-index: 100;
+    /* Asegura que flote por encima de todo */
+    background-color: #292929;
+    /* Configuración para la animación */
+    visibility: hidden;
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+    pointer-events: none;
+    /* Evita que el ratón choque con el tooltip */
+}
+
+/* 3. Haz que aparezca al pasar el mouse (Hover) */
+.botonCrear:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.3s;
+}
+
+.botonCrear:hover {
+    background-color: #292929;
+}
+
+.contenedorLista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0.5rem;
 }
 
 .rec_gris {
@@ -375,20 +493,23 @@ footer .boton {
     flex-direction: column;
     gap: 1rem;
     background-color: #1f1f1f;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
 }
-.letras{
+
+.letras {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
-.rec_gris p{
+
+.rec_gris p {
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
 }
-.rec_gris h3{
+
+.rec_gris h3 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
@@ -408,7 +529,30 @@ footer .boton {
 }
 
 
-.boton:hover{
+.boton:hover {
+    transform: scale(1.05);
+}
+
+.botonIniciarSesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    padding: 0.8rem 1rem;
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+    width: 8rem;
+    height: min-content;
+}
+.botonIniciarSesion p{
+    padding: 0;
+    margin: 0;
+}
+.botonIniciarSesion:hover{
     transform: scale(1.05);
 }
 .info {
@@ -416,18 +560,18 @@ footer .boton {
     flex-direction: row;
     justify-content: space-between;
     padding: 2.5rem;
-      padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
 }
 
-.textoColumna{
+.textoColumna {
     cursor: pointer;
 }
 
 .textoColumna:hover {
     text-decoration: underline;
     color: #ffffff;
-    
+
 }
 
 .columna {
