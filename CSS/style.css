@@ -356,6 +356,7 @@ footer .boton p{
     flex-wrap: nowrap;
     cursor: pointer;
     position: relative;
+    overflow-x: auto;
 }
 
 .cuadradoExtraGap {
