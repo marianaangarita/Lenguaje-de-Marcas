@@ -359,6 +359,16 @@ footer .boton p{
     overflow-x: auto;
 }
 
+.cuadrado::-webkit-scrollbar,
+.redondo::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0%;
+}
+.cuadrado::-webkit-scrollbar-thumb,
+.redondo::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
 .cuadradoExtraGap {
 
     padding-bottom: 5rem;
