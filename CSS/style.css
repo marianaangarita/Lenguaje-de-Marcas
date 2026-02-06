@@ -53,8 +53,17 @@ body {
     font-size: 2rem;
 }
 
+.iconolupa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .iconolupa .material-symbols-outlined {
     font-size: 2rem;
+
 
 }
 
@@ -88,25 +97,61 @@ body {
 }
 
 .fondoIconoCasa::after {
-    content: "Inicio"; 
-    position: absolute;
-    top: 120%; 
+    content: "Inicio";
+    top: 120%;
     left: 50%;
-    transform: translateX(-50%); 
-    
-    background-color: #171417; 
+    transform: translateX(-50%);
+}
+
+.fondoIconoCasa::after,
+.iconolupa::after,  .iconoExplorar::after{
+    position: absolute;
+    background-color: #282828;
     color: white;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.4rem 0.8rem;
     border-radius: 0.3rem;
-    white-space: nowrap; 
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); 
+    white-space: nowrap;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    z-index: 100; 
+    z-index: 100;
     transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.iconoExplorar {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconoExplorar::after {
+    content: "Explorar";
+    position: absolute;
+    top: 161%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconoExplorar:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.iconoExplorar:hover .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.05);
+}
+
+
+
+.iconoExplorar:hover .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.05);
 }
 
 .fondoIconoCasa:hover::after {
@@ -135,6 +180,8 @@ body {
     gap: 0.5rem;
     justify-content: flex-end;
 }
+
+
 
 input {
     background-color: transparent;
@@ -177,37 +224,26 @@ input:focus {
 
 }
 
-.lupa::after {
-    content: "Buscar"; 
-    position: absolute;
-    top: 125%; 
-    left: 7%;
-    transform: translateX(-50%); 
-    
-    background-color: #282828; 
-    color: white;
-    font-size: 0.875rem;
-    font-weight: normal;
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.3rem;
-    white-space: nowrap; 
-    
-  
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); 
-    
-    
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none; 
-    z-index: 100; 
-    
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+
+.iconolupa::after {
+    content: "Buscar";
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.iconolupa:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .lupa:hover::after {
     opacity: 1;
     visibility: visible;
 }
+
 .atajos-teclado {
     display: none;
     gap: 0.3rem;
@@ -231,9 +267,12 @@ header {
     padding-left: 0.5rem;
     align-items: center;
     gap: 0.7rem;
+    position: relative;
+    z-index: 100;
 }
 
-.instalar, .instalarRegistrar{
+.instalar,
+.instalarRegistrar {
     display: flex;
     flex-direction: row;
     gap: 0.4rem;
@@ -468,7 +507,7 @@ footer .boton p {
 .titulo h2 {
     padding: 0;
     margin: 0;
-    font-size:1.8rem;
+    font-size: 1.8rem;
 }
 
 
@@ -689,16 +728,16 @@ footer .boton p {
 .contenedorLista {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0 0.5rem;
 }
 
 .rec_gris {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background-color: #1f1f1f;
-    padding: 1rem 1rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
 }
 
@@ -711,13 +750,13 @@ footer .boton p {
 .rec_gris p {
     margin: 0;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .rec_gris h3 {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .boton {
