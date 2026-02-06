@@ -26,48 +26,56 @@ body {
 .instalarRegistrar {
     font-size: 0.9rem;
 }
-.instalarRegistrar:hover{
+
+.instalarRegistrar:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
 }
-.iconoTexto:hover{
+
+.iconoTexto:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
 }
+
 .vertical {
     height: 1.5rem;
-    width: 0.06rem;           
-    background-color: #727272; 
-    border: none;          
+    width: 0.06rem;
+    background-color: #727272;
+    border: none;
     margin: 0 5px;
 }
 
 .casa .material-symbols-outlined {
     font-variation-settings: 'FILL' 1;
-    color: white; 
-    font-size: 1.7rem; 
+    color: white;
+    font-size: 1.7rem;
 }
-.instalar .material-symbols-outlined{
+
+.instalar .material-symbols-outlined {
     font-size: 1.3rem;
 }
 
 
-.archivoPalo .material-symbols-outlined{
-    font-size: 2rem; 
+.archivoPalo .material-symbols-outlined {
+    font-size: 2rem;
 }
-.iconolupa .material-symbols-outlined{
-    font-size: 2rem; 
-    
+
+.iconolupa .material-symbols-outlined {
+    font-size: 2rem;
+
 }
-.archivoPalo .material-symbols-outlined:hover{
+
+.archivoPalo .material-symbols-outlined:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 0.849);
 }
-.iconolupa .material-symbols-outlined:hover{
+
+.iconolupa .material-symbols-outlined:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 0.89);
 }
-.fondoIconoCasa{
+
+.fondoIconoCasa {
     background-color: #292929;
     border-radius: 50%;
     width: 2.8rem;
@@ -87,8 +95,8 @@ body {
 
 
 .material-symbols-outlined {
-    font-size: 1rem; 
-    color: #b3b3b3; 
+    font-size: 1rem;
+    color: #b3b3b3;
     vertical-align: middle;
 }
 
@@ -114,10 +122,15 @@ input {
     font-family: 'LetraSpotify';
     font-size: 1rem;
     color: #b3b3a5;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 .lupa {
-    width: 27rem;
+    width: 30rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,13 +140,43 @@ input {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     justify-content: space-between;
+    border: 0.2rem solid transparent;
+}
+
+.lupa:hover {
+    background-color: #313131;
+}
+
+.lupa:hover .atajos-teclado {
+    display: flex;
+}
+
+.lupa:focus-within {
+    border-color: white;
+
+}
+
+.atajos-teclado {
+    display: none;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.tecla {
+    background-color: #2a2a2a;
+    color: #b3b3b3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: 0.05rem solid #646464;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-left:0.5rem;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
     align-items: center;
     gap: 0.7rem;
 }
@@ -166,8 +209,9 @@ header {
 }
 
 #fin {
+    width: fit-content;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 1rem;
     align-items: center;
 }
@@ -180,6 +224,7 @@ header {
     white-space: nowrap;
     color: #a7a7a7;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 img {
@@ -237,7 +282,7 @@ footer .boton {
     cursor: pointer;
 }
 
-footer .boton p{
+footer .boton p {
     padding: 0;
     margin: 0;
 }
@@ -286,7 +331,10 @@ footer .boton p{
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0.5rem 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
     background-image: linear-gradient(to bottom, #171417, #121212);
 
 }
@@ -302,6 +350,7 @@ footer .boton p{
     padding: 0.8rem;
     gap: 0.5rem;
     width: fit-content;
+    position: relative;
 
 }
 
@@ -335,18 +384,41 @@ footer .boton p{
     margin: 0;
 }
 
+.brilloGris img:not(.flechaVerde) {
+    box-shadow: -0.5rem 1rem 0.5rem rgb(16, 16, 16);
+}
+
+.brilloGris img,
+.flechaVerde {
+    width: 12rem;
+    height: 12rem;
+}
+
 .titulo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
+
+.titulo h2 {
+    padding: 0;
+    margin: 0;
+    font-size:1.8rem;
+}
+
 
 .titulo p {
     font-weight: bold;
     color: #a7a7a7;
     font-size: small;
+    padding: 0;
+    margin: 0;
 }
 
 .cuadrado,
@@ -360,12 +432,13 @@ footer .boton p{
 }
 
 .cuadrado::-webkit-scrollbar,
-.redondo::-webkit-scrollbar{
+.redondo::-webkit-scrollbar {
     background-color: transparent;
     height: 0%;
 }
+
 .cuadrado::-webkit-scrollbar-thumb,
-.redondo::-webkit-scrollbar-thumb{
+.redondo::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
@@ -385,6 +458,7 @@ footer .boton p{
 .flechaVerde {
     position: absolute;
     visibility: hidden;
+
 }
 
 .barra_lateral {
@@ -605,7 +679,7 @@ footer .boton p{
     transform: scale(1.05);
 }
 
-.botonIniciarSesion{
+.botonIniciarSesion {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -620,13 +694,16 @@ footer .boton p{
     width: 8rem;
     height: min-content;
 }
-.botonIniciarSesion p{
+
+.botonIniciarSesion p {
     padding: 0;
     margin: 0;
 }
-.botonIniciarSesion:hover{
+
+.botonIniciarSesion:hover {
     transform: scale(1.05);
 }
+
 .info {
     display: flex;
     flex-direction: row;
@@ -672,7 +749,7 @@ footer .boton p{
 .canciones::-webkit-scrollbar,
 .barra_lateral::-webkit-scrollbar {
     width: 0.8rem;
-    background: transparent;
+    background-color: transparent;
 }
 
 
