@@ -28,6 +28,7 @@ body {
 .iconoTexto:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .vertical {
@@ -117,7 +118,7 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    z-index: 100;
+    z-index: 500;
     transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
@@ -209,6 +210,7 @@ input:focus {
     justify-content: space-between;
     border: 0.2rem solid transparent;
     position: relative;
+    cursor: pointer;
 }
 
 .lupa:hover {
@@ -268,7 +270,7 @@ header {
     align-items: center;
     gap: 0.7rem;
     position: relative;
-    z-index: 500;
+    z-index: 100;
 }
 
 .instalar,
@@ -285,11 +287,13 @@ header {
 .instalarRegistrar:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .instalar:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .Spotify {
@@ -563,6 +567,7 @@ footer .boton p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .barra_superior {
@@ -671,9 +676,9 @@ footer .boton p {
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
-    border-radius: 2rem;
+    border-radius: 2.8rem;
     width: 6rem;
-    height: 3rem;
+    height: 2rem;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -702,19 +707,15 @@ footer .boton p {
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Sombra para profundidad */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
     z-index: 100;
-    /* Asegura que flote por encima de todo */
     background-color: #292929;
-    /* Configuración para la animación */
     visibility: hidden;
     transition: opacity 0.1s ease, visibility 0.1s ease;
     pointer-events: none;
-    /* Evita que el ratón choque con el tooltip */
 }
 
-/* 3. Haz que aparezca al pasar el mouse (Hover) */
+
 .botonCrear:hover::after {
     opacity: 1;
     visibility: visible;
