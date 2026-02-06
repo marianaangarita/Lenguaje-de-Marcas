@@ -268,7 +268,7 @@ header {
     align-items: center;
     gap: 0.7rem;
     position: relative;
-    z-index: 100;
+    z-index: 500;
 }
 
 .instalar,
@@ -750,13 +750,13 @@ footer .boton p {
 .rec_gris p {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .rec_gris h3 {
     margin: 0;
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .boton {
