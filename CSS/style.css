@@ -297,8 +297,9 @@ header {
 }
 
 .Spotify {
-    width: 2.6rem;
+    width: 2.8rem;
     height: auto;
+    padding-left: 0.8rem;
 }
 
 
@@ -311,6 +312,7 @@ header {
 }
 
 #fin {
+    align-content: center;
     width: fit-content;
     display: flex;
     justify-content: flex-end;
@@ -321,14 +323,33 @@ header {
 .iconos {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     white-space: nowrap;
     color: #a7a7a7;
     font-weight: bold;
     font-size: 1.2rem;
 }
-
+.iconosPremium{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    white-space: nowrap;
+    color: #a7a7a7;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.iconosCasa{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    white-space: nowrap;
+    color: #a7a7a7;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 img {
     width: 100%;
     height: auto;
@@ -357,8 +378,11 @@ footer {
     align-items: center;
     background-image: linear-gradient(to right, #af2996, #509af4);
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-
+    padding-bottom: 0.5rem;
+    padding-right: 1.8rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    cursor: pointer;
 }
 
 footer .texto h4 {
@@ -368,20 +392,25 @@ footer .texto h4 {
 
 footer .texto p {
     margin: 0;
+    padding: 0;
     font-weight: normal;
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
 }
 
 footer .boton {
     text-align: center;
-    width: 10rem;
+    width: 11rem;
+    height: 2rem;
     background-color: white;
     color: black;
     border-radius: 2rem;
-    padding: 0.7rem 0.5rem;
+    padding: 0.7rem 1.2rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
     white-space: nowrap;
     cursor: pointer;
+    align-content: center;
 }
 
 footer .boton p {
@@ -476,12 +505,12 @@ footer .boton p {
     margin: 0;
     padding: 0;
     font-weight: lighter;
-    font-size: medium;
+    font-size: 1.1rem;
 }
 
 .brilloGris p {
     color: #9e9e9e;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -495,7 +524,20 @@ footer .boton p {
     width: 12rem;
     height: 12rem;
 }
-
+.E{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.explicit{
+    background-color: #b3b3b3;
+    color: #181818;
+    font-weight: bold;
+    padding: 0.05rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+}
 .titulo {
     display: flex;
     flex-direction: row;
@@ -504,21 +546,31 @@ footer .boton p {
     cursor: pointer;
     padding-left: 1rem;
     padding-right: 2.5rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
 }
-
-.titulo h2 {
+.tituloTendencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+.titulo h2, .tituloTendencia h2 {
     padding: 0;
     margin: 0;
     font-size: 1.8rem;
 }
 
 
-.titulo p {
+.titulo p, .tituloTendencia p {
     font-weight: bold;
     color: #a7a7a7;
-    font-size: small;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -546,7 +598,7 @@ footer .boton p {
 
 .cuadradoExtraGap {
 
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .cuadrado img {
@@ -598,7 +650,7 @@ footer .boton p {
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
     width: 100%;
-    padding-right: 0;
+    padding-right: 2rem;
     box-sizing: border-box;
 
 }
@@ -607,7 +659,7 @@ footer .boton p {
     margin: 0;
     padding: 0;
     color: #b3b3b3;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     cursor: pointer;
 }
 
@@ -624,7 +676,7 @@ footer .boton p {
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     font-weight: regular;
 }
 
@@ -654,7 +706,7 @@ footer .boton p {
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -669,7 +721,14 @@ footer .boton p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 0.3rem;
+}
+
+.contenido h4{
+    font-size: 1.1rem;
 }
 
 .botonCrear {
@@ -687,12 +746,13 @@ footer .boton p {
     cursor: pointer;
     font-weight: bold;
     position: relative;
+    padding: 0.3rem;
 }
 
 .botonCrear p {
     padding: 0;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .botonCrear::after {
@@ -736,7 +796,7 @@ footer .boton p {
 .rec_gris {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     background-color: #1f1f1f;
     padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
@@ -745,19 +805,19 @@ footer .boton p {
 .letras {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 
 .rec_gris p {
     margin: 0;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .rec_gris h3 {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .boton {
@@ -770,7 +830,7 @@ footer .boton p {
     cursor: pointer;
     width: fit-content;
     height: min-content;
-
+    font-size: 0.5rem;
 }
 
 
@@ -790,13 +850,14 @@ footer .boton p {
     white-space: nowrap;
     font-weight: bold;
     cursor: pointer;
-    width: 8rem;
-    height: min-content;
+    width: 9rem;
+    height: 1.7rem;
 }
 
 .botonIniciarSesion p {
     padding: 0;
     margin: 0;
+    font-size: 1.1rem;
 }
 
 .botonIniciarSesion:hover {
@@ -807,9 +868,10 @@ footer .boton p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2.5rem;
+    padding-top: 3.7rem;
     padding-left: 0;
     padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .textoColumna {
@@ -821,7 +883,13 @@ footer .boton p {
     color: #ffffff;
 
 }
-
+.distribucionColumna{
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+    align-content: center;
+    justify-content: flex-start;
+}
 .columna {
     display: flex;
     flex-direction: column;
@@ -831,30 +899,32 @@ footer .boton p {
 .columna h4 {
     margin: 0;
     padding: 0;
+    font-size: 1.15rem;
 }
 
 .columna p {
     color: #a0a0a0;
     margin: 0;
     padding: 0;
+    font-size: 1.1rem;
 }
 
 .copywrite {
     color: #a3a3a3;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Ancho de la barra */
-.canciones::-webkit-scrollbar,
-.barra_lateral::-webkit-scrollbar {
+.canciones::-webkit-scrollbar{
     width: 0.8rem;
     background-color: transparent;
 }
 
 
 /* El "dedo" o la parte que se mueve */
-.canciones::-webkit-scrollbar-thumb,
-.barra_lateral::-webkit-scrollbar-thumb {
+.canciones::-webkit-scrollbar-thumb{
     background-color: rgba(255, 255, 255, 0.3);
     /* Blanco semitransparente */
     border-radius: 2rem;
@@ -863,7 +933,6 @@ footer .boton p {
 }
 
 /* Al pasar el ratón por encima */
-.canciones::-webkit-scrollbar-thumb:hover,
-.barra_lateral::-webkit-scrollbar-thumb:hover {
+.canciones::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
