@@ -598,7 +598,7 @@ footer .boton p {
 
 .cuadradoExtraGap {
 
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .cuadrado img {
@@ -868,9 +868,10 @@ footer .boton p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2.5rem;
+    padding-top: 3.7rem;
     padding-left: 0;
     padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .textoColumna {
@@ -882,7 +883,13 @@ footer .boton p {
     color: #ffffff;
 
 }
-
+.distribucionColumna{
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+    align-content: center;
+    justify-content: flex-start;
+}
 .columna {
     display: flex;
     flex-direction: column;
@@ -892,30 +899,32 @@ footer .boton p {
 .columna h4 {
     margin: 0;
     padding: 0;
+    font-size: 1.15rem;
 }
 
 .columna p {
     color: #a0a0a0;
     margin: 0;
     padding: 0;
+    font-size: 1.1rem;
 }
 
 .copywrite {
     color: #a3a3a3;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Ancho de la barra */
-.canciones::-webkit-scrollbar,
-.barra_lateral::-webkit-scrollbar {
+.canciones::-webkit-scrollbar{
     width: 0.8rem;
     background-color: transparent;
 }
 
 
 /* El "dedo" o la parte que se mueve */
-.canciones::-webkit-scrollbar-thumb,
-.barra_lateral::-webkit-scrollbar-thumb {
+.canciones::-webkit-scrollbar-thumb{
     background-color: rgba(255, 255, 255, 0.3);
     /* Blanco semitransparente */
     border-radius: 2rem;
@@ -924,7 +933,6 @@ footer .boton p {
 }
 
 /* Al pasar el ratón por encima */
-.canciones::-webkit-scrollbar-thumb:hover,
-.barra_lateral::-webkit-scrollbar-thumb:hover {
+.canciones::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
