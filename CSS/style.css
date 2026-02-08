@@ -23,61 +23,73 @@ body {
     border-top: 1px solid #292929;
 }
 
-.instalarRegistrar {
-    font-size: 0.9rem;
-}
-.instalarRegistrar:hover{
+
+
+.iconoTexto:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
+    cursor: pointer;
 }
-.iconoTexto:hover{
-    color: rgba(255, 255, 255, 0.849);
-    transform: scale(1.05);
-}
+
 .vertical {
     height: 1.5rem;
-    width: 0.06rem;           
-    background-color: #727272; 
-    border: none;          
+    width: 0.06rem;
+    background-color: #727272;
+    border: none;
     margin: 0 5px;
 }
 
 .casa .material-symbols-outlined {
     font-variation-settings: 'FILL' 1;
-    color: white; 
-    font-size: 1.7rem; 
+    color: white;
+    font-size: 2rem;
 }
-.instalar .material-symbols-outlined{
+
+.instalar .material-symbols-outlined {
     font-size: 1.3rem;
 }
 
 
-.archivoPalo .material-symbols-outlined{
-    font-size: 2rem; 
+.archivoPalo .material-symbols-outlined {
+    font-size: 2rem;
 }
-.iconolupa .material-symbols-outlined{
-    font-size: 2rem; 
-    
+
+.iconolupa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.archivoPalo .material-symbols-outlined:hover{
+
+.iconolupa .material-symbols-outlined {
+    font-size: 2rem;
+
+
+}
+
+.archivoPalo .material-symbols-outlined:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 0.849);
 }
-.iconolupa .material-symbols-outlined:hover{
+
+.iconolupa .material-symbols-outlined:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 0.89);
 }
-.fondoIconoCasa{
+
+.fondoIconoCasa {
     background-color: #292929;
     border-radius: 50%;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3.1rem;
+    height: 3.1rem;
     padding: 0.5rem;
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .fondoIconoCasa:hover {
@@ -85,10 +97,72 @@ body {
     transform: scale(1.05);
 }
 
+.fondoIconoCasa::after {
+    content: "Inicio";
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fondoIconoCasa::after,
+.iconolupa::after,  .iconoExplorar::after{
+    position: absolute;
+    background-color: #282828;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 500;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.iconoExplorar {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconoExplorar::after {
+    content: "Explorar";
+    position: absolute;
+    top: 161%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconoExplorar:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.iconoExplorar:hover .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.05);
+}
+
+
+
+.iconoExplorar:hover .material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.05);
+}
+
+.fondoIconoCasa:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
 
 .material-symbols-outlined {
-    font-size: 1rem; 
-    color: #b3b3b3; 
+    font-size: 1rem;
+    color: #b3b3b3;
     vertical-align: middle;
 }
 
@@ -108,16 +182,23 @@ body {
     justify-content: flex-end;
 }
 
+
+
 input {
     background-color: transparent;
     border: 0px;
     font-family: 'LetraSpotify';
     font-size: 1rem;
     color: #b3b3a5;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 .lupa {
-    width: 27rem;
+    width: 30rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,28 +208,92 @@ input {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     justify-content: space-between;
+    border: 0.2rem solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    background-color: #313131;
+}
+
+.lupa:hover .atajos-teclado {
+    display: flex;
+}
+
+.lupa:focus-within {
+    border-color: white;
+
+}
+
+
+.iconolupa::after {
+    content: "Buscar";
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.iconolupa:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lupa:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.atajos-teclado {
+    display: none;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.tecla {
+    background-color: #2a2a2a;
+    color: #b3b3b3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: 0.05rem solid #646464;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-left:0.5rem;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
     align-items: center;
     gap: 0.7rem;
+    position: relative;
+    z-index: 100;
 }
 
-.instalar {
+.instalar,
+.instalarRegistrar {
     display: flex;
     flex-direction: row;
     gap: 0.4rem;
     align-items: center;
     align-content: center;
+    font-size: 1rem;
+}
+
+
+.instalarRegistrar:hover {
+    color: rgba(255, 255, 255, 0.849);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .instalar:hover {
     color: rgba(255, 255, 255, 0.849);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .Spotify {
@@ -166,8 +311,9 @@ header {
 }
 
 #fin {
+    width: fit-content;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 1rem;
     align-items: center;
 }
@@ -180,6 +326,7 @@ header {
     white-space: nowrap;
     color: #a7a7a7;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 img {
@@ -208,7 +355,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #a237a2, #509bf5);
+    background-image: linear-gradient(to right, #af2996, #509af4);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
 
@@ -237,7 +384,7 @@ footer .boton {
     cursor: pointer;
 }
 
-footer .boton p{
+footer .boton p {
     padding: 0;
     margin: 0;
 }
@@ -251,7 +398,7 @@ footer .boton p{
 }
 
 .rrss .fondoIcono img {
-    width: 80%;
+    width: 75%;
     height: auto;
     filter: invert(1);
     display: block;
@@ -260,8 +407,8 @@ footer .boton p{
 .fondoIcono {
     background-color: #292929;
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
     padding: 0.5rem;
     box-sizing: border-box;
     cursor: pointer;
@@ -286,7 +433,10 @@ footer .boton p{
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0.5rem 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
     background-image: linear-gradient(to bottom, #171417, #121212);
 
 }
@@ -302,6 +452,7 @@ footer .boton p{
     padding: 0.8rem;
     gap: 0.5rem;
     width: fit-content;
+    position: relative;
 
 }
 
@@ -335,18 +486,41 @@ footer .boton p{
     margin: 0;
 }
 
+.brilloGris img:not(.flechaVerde) {
+    box-shadow: -0.5rem 1rem 0.5rem rgb(16, 16, 16);
+}
+
+.brilloGris img,
+.flechaVerde {
+    width: 12rem;
+    height: 12rem;
+}
+
 .titulo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
+
+.titulo h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
 
 .titulo p {
     font-weight: bold;
     color: #a7a7a7;
     font-size: small;
+    padding: 0;
+    margin: 0;
 }
 
 .cuadrado,
@@ -360,12 +534,13 @@ footer .boton p{
 }
 
 .cuadrado::-webkit-scrollbar,
-.redondo::-webkit-scrollbar{
+.redondo::-webkit-scrollbar {
     background-color: transparent;
     height: 0%;
 }
+
 .cuadrado::-webkit-scrollbar-thumb,
-.redondo::-webkit-scrollbar-thumb{
+.redondo::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
@@ -385,12 +560,14 @@ footer .boton p{
 .flechaVerde {
     position: absolute;
     visibility: hidden;
+
 }
 
 .barra_lateral {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .barra_superior {
@@ -499,9 +676,9 @@ footer .boton p{
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
-    border-radius: 2rem;
+    border-radius: 2.8rem;
     width: 6rem;
-    height: 3rem;
+    height: 2rem;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -530,19 +707,15 @@ footer .boton p{
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Sombra para profundidad */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
     z-index: 100;
-    /* Asegura que flote por encima de todo */
     background-color: #292929;
-    /* Configuración para la animación */
     visibility: hidden;
     transition: opacity 0.1s ease, visibility 0.1s ease;
     pointer-events: none;
-    /* Evita que el ratón choque con el tooltip */
 }
 
-/* 3. Haz que aparezca al pasar el mouse (Hover) */
+
 .botonCrear:hover::after {
     opacity: 1;
     visibility: visible;
@@ -556,16 +729,16 @@ footer .boton p{
 .contenedorLista {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0 0.5rem;
 }
 
 .rec_gris {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background-color: #1f1f1f;
-    padding: 1rem 1rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
 }
 
@@ -605,7 +778,7 @@ footer .boton p{
     transform: scale(1.05);
 }
 
-.botonIniciarSesion{
+.botonIniciarSesion {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -620,20 +793,23 @@ footer .boton p{
     width: 8rem;
     height: min-content;
 }
-.botonIniciarSesion p{
+
+.botonIniciarSesion p {
     padding: 0;
     margin: 0;
 }
-.botonIniciarSesion:hover{
+
+.botonIniciarSesion:hover {
     transform: scale(1.05);
 }
+
 .info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2.5rem;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 1.5rem;
 }
 
 .textoColumna {
@@ -672,7 +848,7 @@ footer .boton p{
 .canciones::-webkit-scrollbar,
 .barra_lateral::-webkit-scrollbar {
     width: 0.8rem;
-    background: transparent;
+    background-color: transparent;
 }
 
 
