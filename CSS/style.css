@@ -950,7 +950,42 @@ footer .boton p {
 }
 
 /*mobil*/
-@media (max-width:600px) {}
+@media (max-width:600px) {
+    .barra_lateral{
+        display: none;
+    }
+    footer .boton{
+        display: none;
+    }
+    .info {
+        flex-direction: column;
+        gap: 3rem;
+    }
+     .distribucionColumna {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .rrss {
+        justify-content: flex-start;
+    }
+    .textDecoration:not(h3){
+        white-space: nowrap;
+    }
+    .iconosPremium{
+        display: none;
+    }
+    .iconos{
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    .iconosCasa{
+        display: none;
+    }
+    
+}
 
 /*Tablet*/
 @media (min-width:601px) and (max-width:1024px) {
@@ -1083,7 +1118,7 @@ footer .boton p {
     .rrss {
         justify-content: flex-start;
     }
-    .textDecoration{
+    .textDecoration:not(h3){
         white-space: nowrap;
     }
     .rec_gris p{
