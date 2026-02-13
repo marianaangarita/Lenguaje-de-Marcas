@@ -991,6 +991,23 @@ footer .boton p {
     .tituloTendencia p {
         display: none;
     }
+     .copywrite .avisoLegal, .copywrite .espanolEspana{
+        display: flex;
+    }
+    .canciones{
+        padding-left: 1rem;
+    }
+    .copywrite{
+        padding-bottom: 4.5rem;
+    }
+    .textoSpotify{
+        display:flex;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    #inicio{
+        justify-content: flex-start;
+    }
 }
 
 
@@ -1154,8 +1171,15 @@ footer .boton p {
     .barra_lateral{
         height: 100%;
     }
-   
+     .copywrite .avisoLegal, .copywrite .espanolEspana{
+        display: none;
+    }
+    .textoSpotify{
+        display:none;
+    }
 }
+   
+
 
 
 /*Escritorio*/
@@ -1163,5 +1187,11 @@ footer .boton p {
     .menu {
         display: none;
 
+    }
+    .copywrite .avisoLegal, .copywrite .espanolEspana{
+        display: none;
+    }
+    .textoSpotify{
+        display: none;
     }
 }
