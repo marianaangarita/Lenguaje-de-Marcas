@@ -984,8 +984,15 @@ footer .boton p {
     .iconosCasa{
         display: none;
     }
-    
+    .redondo img:not(.flechaVerde){
+        border-radius: 0.5rem;
+    }
+    .titulo p, 
+    .tituloTendencia p {
+        display: none;
+    }
 }
+
 
 /*Tablet*/
 @media (min-width:601px) and (max-width:1024px) {
