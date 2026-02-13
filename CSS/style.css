@@ -954,24 +954,26 @@ footer .boton p {
 
 /*Tablet*/
 @media (min-width:601px) and (max-width:1024px) {
-    main{
+    main {
         grid-template-columns: 1fr 2fr;
     }
+
     footer {
         overflow: hidden;
         box-sizing: border-box;
         min-width: 0;
         width: 100%;
         height: 5rem;
+        padding-right: 0.8rem;
     }
 
     footer .boton {
-        width: 5rem;
+        width: 7rem;
         height: 1rem;
     }
 
     footer .boton p {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
     }
 
     footer .texto h4 {
@@ -981,7 +983,7 @@ footer .boton p {
 
     footer .texto p {
         width: fit-content;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .texto {
@@ -1021,7 +1023,8 @@ footer .boton p {
     .lupa:hover .atajos-teclado {
         display: none;
     }
-    .lupaInput{
+
+    .lupaInput {
         background-color: #1f1f1f;
         padding: 0.7rem;
         border-radius: 50%;
@@ -1030,20 +1033,93 @@ footer .boton p {
         box-sizing: border-box;
 
     }
+
     .vertical {
         display: none;
     }
-    .botonIniciarSesion{
+    .contenido h4{
+        white-space: nowrap;
+    }
+    .contenido{
+        padding-bottom: 0;
+        padding-right: 1rem;
+    }
+
+    .botonIniciarSesion {
         padding: 0.8rem 0.5rem;
     }
-    .botonIniciarSesion p{
+
+    .botonIniciarSesion p {
         font-size: 1rem;
     }
-   .botonCrear p{
-    display: none;
-   }
+
+    .botonCrear {
+        width: 2rem;
+    }
+
+    .botonCrear p {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .brilloGris img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .distribucionColumna {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .rrss {
+        justify-content: flex-start;
+    }
+    .textDecoration{
+        white-space: nowrap;
+    }
+    .rec_gris p{
+        font-size: 0.85rem;
+    }
+    .rec_gris h3{
+        font-size: 0.95rem;
+    }
+    .avisoLegal{
+        gap: 0.5rem 1rem;
+    }
+    .avisoLegal p{
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    .espanolEspana p{
+        font-size: 0.8rem;
+    }
+    .barra_inferior{
+        height: 30%;
+        gap: 1rem;
+    }
+    .barra_superior{
+        height: 50%;
+    }
+    .barra_lateral{
+        height: 100%;
+    }
+   
 }
 
 
 /*Escritorio*/
-@media (min-width:1025px) {}
+@media (min-width:1025px) {
+    .menu {
+        display: none;
+
+    }
+}
