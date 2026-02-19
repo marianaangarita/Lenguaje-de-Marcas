@@ -323,12 +323,8 @@ span {
 
 }
 
-
-
-
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to right, #af2996, #509af4);
@@ -342,13 +338,10 @@ footer {
 
 footer .texto h4 {
     margin: 0;
-    font-weight: bold;
 }
 
 footer .texto p {
     margin: 0;
-    padding: 0;
-    font-weight: normal;
     padding-bottom: 0.3rem;
 }
 
@@ -356,9 +349,6 @@ footer .boton {
     text-align: center;
     width: 11rem;
     height: 2rem;
-    background-color: white;
-    color: black;
-    border-radius: 2rem;
     padding: 0.7rem 1.2rem;
     white-space: nowrap;
     cursor: pointer;
@@ -366,25 +356,18 @@ footer .boton {
 }
 
 footer .boton p {
-    padding: 0;
     margin: 0;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .rrss {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
-    align-items: flex-start;
-    justify-content: flex-end;
 }
 
 .rrss .fondoIcono img {
     width: 75%;
-    height: auto;
     filter: invert(1);
-    display: block;
 }
 
 .fondoIcono {
@@ -576,7 +559,6 @@ footer .boton p {
     padding-right: 0.8rem;
     padding-left: 1.5rem;
     padding-bottom: 2rem;
-    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -588,18 +570,14 @@ footer .boton p {
 
 .avisoLegal {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
-    width: 100%;
     padding-right: 2rem;
-    box-sizing: border-box;
 
 }
 
 .avisoLegal p {
     margin: 0;
-    padding: 0;
     color: #b3b3b3;
     font-size: 0.80rem;
     cursor: pointer;
@@ -609,17 +587,14 @@ footer .boton p {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0;
     width: fit-content;
     cursor: pointer;
 }
 
 .cookies p {
     margin: 0;
-    padding: 0;
     color: white;
     font-size: 0.80rem;
-    font-weight: regular;
 }
 
 .cookies:hover {
@@ -633,11 +608,9 @@ footer .boton p {
 
 .espanolEspana {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
     padding: 0.3rem 1rem;
-    background-color: transparent;
     border: 0.05rem solid #4f4f4f;
     border-radius: 2rem;
     width: fit-content;
@@ -646,7 +619,6 @@ footer .boton p {
 
 .espanolEspana p {
     margin: 0;
-    padding: 0;
     color: white;
     font-size: 0.95rem;
     font-weight: bold;
@@ -660,13 +632,9 @@ footer .boton p {
 
 .contenido {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    padding-top: 0.3rem;
+    padding: 0.3rem 1.5rem 1rem;
 }
 
 .contenido h4 {
@@ -675,14 +643,12 @@ footer .boton p {
 
 .botonCrear {
     display: flex;
-    flex-direction: row;
     background-color: #1f1f1f;
     border-radius: 2.8rem;
     width: 6rem;
     height: 2rem;
     justify-content: center;
     align-items: center;
-    align-content: center;
     gap: 0.5rem;
     white-space: nowrap;
     cursor: pointer;
@@ -692,8 +658,6 @@ footer .boton p {
 }
 
 .botonCrear p {
-    padding: 0;
-    margin: 0;
     font-size: 0.95rem;
 }
 
@@ -714,7 +678,6 @@ footer .boton p {
     background-color: #292929;
     visibility: hidden;
     transition: opacity 0.1s ease, visibility 0.1s ease;
-    pointer-events: none;
 }
 
 
@@ -752,13 +715,10 @@ footer .boton p {
 
 .rec_gris p {
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
 }
 
 .rec_gris h3 {
     margin: 0;
-    padding: 0;
     font-size: 1.1rem;
 }
 
@@ -771,8 +731,6 @@ footer .boton p {
     font-weight: bold;
     cursor: pointer;
     width: fit-content;
-    height: min-content;
-    font-size: 0.5rem;
 }
 
 
@@ -869,13 +827,13 @@ footer .boton p {
 .menu {
         display: none;
 
-    }
-    .copywrite .avisoLegal, .copywrite .espanolEspana{
+}
+.copywrite .avisoLegal, .copywrite .espanolEspana{
         display: none;
-    }
-    .textoSpotify{
+}
+.textoSpotify{
         display: none;
-    }
+}
 
 
 /*móvil*/
@@ -1140,6 +1098,7 @@ footer .boton p {
     }
     .avisoLegal{
         gap: 0.5rem 1rem;
+        padding-right: 0;
     }
     .avisoLegal p{
         font-size: 0.75rem;
