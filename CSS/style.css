@@ -975,7 +975,7 @@ footer .boton p {
     .rrss {
         justify-content: flex-start;
     }
-    .textDecoration:not(h3):not(p){
+    .textDecoration:not(.cuadrado h3):not(.cuadrado p):not(.redondo h3):not(.redondo p){
         white-space: nowrap;
     }
     .iconosPremium{
@@ -1190,7 +1190,7 @@ footer .boton p {
     .rrss {
         justify-content: flex-start;
     }
-    .textDecoration:not(h3):not(p){
+    .textDecoration:not(.cuadrado h3):not(.cuadrado p):not(.redondo h3):not(.redondo p){
         white-space: nowrap;
     }
     .rec_gris p{
@@ -1228,7 +1228,16 @@ footer .boton p {
     .cuadradoExtraGap{
     padding-bottom: 2rem;
     }
+    .titulo h2,
+    .tituloTendencia h2 {
+    font-size: 1.3rem;
+    }
+    .titulo,
+    .tituloTendencia {
+    padding-right: 1rem;
+    }
 }
+
    
 
 
