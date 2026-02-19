@@ -23,9 +23,7 @@ main {
     display: grid;
     grid-template-columns: 0.87fr 3fr;
     gap: 0.5rem;
-    overflow: visible;
     min-height: 0;
-    height: 100%;
 }
 
 
@@ -49,7 +47,7 @@ main {
     width: 0.06rem;
     background-color: #727272;
     border: none;
-    margin: 0 5px;
+    margin: 0;
 }
 
 .casa .material-symbols-outlined {
@@ -69,16 +67,10 @@ main {
 
 .iconolupa {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .iconolupa .material-symbols-outlined {
     font-size: 2rem;
-
-
 }
 
 .archivoPalo .material-symbols-outlined:hover {
@@ -96,13 +88,10 @@ main {
     border-radius: 50%;
     width: 3.1rem;
     height: 3.1rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .fondoIconoCasa:hover {
@@ -123,29 +112,21 @@ main {
     position: absolute;
     background-color: #282828;
     color: white;
-    font-size: 1rem;
-    font-weight: normal;
     padding: 0.4rem 0.8rem;
     border-radius: 0.3rem;
     white-space: nowrap;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-    z-index: 500;
     transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .iconoExplorar {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .iconoExplorar::after {
     content: "Explorar";
-    position: absolute;
     top: 161%;
     left: 50%;
     transform: translateX(-50%);
@@ -182,18 +163,13 @@ main {
 
 .lupaInput {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
-    align-items: center;
-
 }
 
 .archivoPalo {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    justify-content: flex-end;
 }
 
 
@@ -203,8 +179,6 @@ input {
     border: 0px;
     font-family: 'LetraSpotify';
     font-size: 1rem;
-    color: #b3b3a5;
-    outline: none;
 }
 
 input:focus {
@@ -214,16 +188,11 @@ input:focus {
 .lupa {
     width: 30rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
     background-color: #1f1f1f;
-    gap: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     justify-content: space-between;
     border: 0.2rem solid transparent;
-    position: relative;
     cursor: pointer;
 }
 
@@ -263,7 +232,6 @@ input:focus {
 .atajos-teclado {
     display: none;
     gap: 0.3rem;
-    align-items: center;
 }
 
 .tecla {
@@ -271,30 +239,21 @@ input:focus {
     color: #b3b3b3;
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: lighter;
     border: 0.05rem solid #646464;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     padding-left: 0.5rem;
-    align-items: center;
     gap: 0.7rem;
-    position: relative;
     z-index: 100;
 }
 
 .instalar,
 .instalarRegistrar {
     display: flex;
-    flex-direction: row;
     gap: 0.4rem;
     align-items: center;
-    align-content: center;
-    font-size: 1rem;
 }
 
 
@@ -312,7 +271,6 @@ header {
 
 .Spotify {
     width: 2.8rem;
-    height: auto;
     padding-left: 0.8rem;
 }
 
@@ -322,34 +280,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
 }
 
 #fin {
-    align-content: center;
-    width: fit-content;
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
     align-items: center;
 }
 
 .iconos {
     display: flex;
-    flex-direction: row;
     gap: 2rem;
-    align-items: center;
     white-space: nowrap;
     color: #a7a7a7;
     font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .iconosPremium {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
-    align-items: center;
     white-space: nowrap;
     color: #a7a7a7;
     font-weight: bold;
@@ -358,13 +307,9 @@ header {
 
 .iconosCasa {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
     white-space: nowrap;
-    color: #a7a7a7;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 img {
@@ -378,12 +323,8 @@ span {
 
 }
 
-
-
-
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to right, #af2996, #509af4);
@@ -397,13 +338,10 @@ footer {
 
 footer .texto h4 {
     margin: 0;
-    font-weight: bold;
 }
 
 footer .texto p {
     margin: 0;
-    padding: 0;
-    font-weight: normal;
     padding-bottom: 0.3rem;
 }
 
@@ -411,9 +349,6 @@ footer .boton {
     text-align: center;
     width: 11rem;
     height: 2rem;
-    background-color: white;
-    color: black;
-    border-radius: 2rem;
     padding: 0.7rem 1.2rem;
     white-space: nowrap;
     cursor: pointer;
@@ -421,25 +356,18 @@ footer .boton {
 }
 
 footer .boton p {
-    padding: 0;
     margin: 0;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .rrss {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
-    align-items: flex-start;
-    justify-content: flex-end;
 }
 
 .rrss .fondoIcono img {
     width: 75%;
-    height: auto;
     filter: invert(1);
-    display: block;
 }
 
 .fondoIcono {
@@ -469,12 +397,10 @@ footer .boton p {
 .canciones {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     overflow-x: hidden;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 2rem;
-    padding-right: 0;
     background-image: linear-gradient(to bottom, #171417, #121212);
 
 }
@@ -489,7 +415,6 @@ footer .boton p {
     flex-direction: column;
     padding: 0.8rem;
     gap: 0.5rem;
-    width: fit-content;
     position: relative;
 
 }
@@ -512,15 +437,12 @@ footer .boton p {
 
 .brilloGris h3 {
     margin: 0;
-    padding: 0;
     font-weight: lighter;
     font-size: 1.1rem;
 }
 
 .brilloGris p {
     color: #9e9e9e;
-    font-size: 1rem;
-    padding: 0;
     margin: 0;
 }
 
@@ -536,7 +458,6 @@ footer .boton p {
 
 .E {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
 }
@@ -550,33 +471,26 @@ footer .boton p {
     font-size: 0.8rem;
 }
 
-.titulo {
+.titulo{
+    padding-top: 3rem;
+}
+
+.titulo, .tituloTendencia {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     padding-left: 1rem;
     padding-right: 2.5rem;
-    padding-top: 3rem;
     padding-bottom: 0.5rem;
 }
 
 .tituloTendencia {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding-left: 1rem;
-    padding-right: 2.5rem;
     padding-top: 0.8rem;
-    padding-bottom: 0.5rem;
 }
 
 .titulo h2,
 .tituloTendencia h2 {
-    padding: 0;
     margin: 0;
     font-size: 1.8rem;
 }
@@ -586,18 +500,13 @@ footer .boton p {
 .tituloTendencia p {
     font-weight: bold;
     color: #a7a7a7;
-    font-size: 1rem;
-    padding: 0;
     margin: 0;
 }
 
 .cuadrado,
 .redondo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     cursor: pointer;
-    position: relative;
     overflow-x: auto;
 }
 
@@ -650,7 +559,6 @@ footer .boton p {
     padding-right: 0.8rem;
     padding-left: 1.5rem;
     padding-bottom: 2rem;
-    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -662,18 +570,14 @@ footer .boton p {
 
 .avisoLegal {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
-    width: 100%;
     padding-right: 2rem;
-    box-sizing: border-box;
 
 }
 
 .avisoLegal p {
     margin: 0;
-    padding: 0;
     color: #b3b3b3;
     font-size: 0.80rem;
     cursor: pointer;
@@ -683,17 +587,14 @@ footer .boton p {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0;
     width: fit-content;
     cursor: pointer;
 }
 
 .cookies p {
     margin: 0;
-    padding: 0;
     color: white;
     font-size: 0.80rem;
-    font-weight: regular;
 }
 
 .cookies:hover {
@@ -707,11 +608,9 @@ footer .boton p {
 
 .espanolEspana {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
     padding: 0.3rem 1rem;
-    background-color: transparent;
     border: 0.05rem solid #4f4f4f;
     border-radius: 2rem;
     width: fit-content;
@@ -720,7 +619,6 @@ footer .boton p {
 
 .espanolEspana p {
     margin: 0;
-    padding: 0;
     color: white;
     font-size: 0.95rem;
     font-weight: bold;
@@ -734,13 +632,9 @@ footer .boton p {
 
 .contenido {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    padding-top: 0.3rem;
+    padding: 0.3rem 1.5rem 1rem;
 }
 
 .contenido h4 {
@@ -749,14 +643,12 @@ footer .boton p {
 
 .botonCrear {
     display: flex;
-    flex-direction: row;
     background-color: #1f1f1f;
     border-radius: 2.8rem;
     width: 6rem;
     height: 2rem;
     justify-content: center;
     align-items: center;
-    align-content: center;
     gap: 0.5rem;
     white-space: nowrap;
     cursor: pointer;
@@ -766,8 +658,6 @@ footer .boton p {
 }
 
 .botonCrear p {
-    padding: 0;
-    margin: 0;
     font-size: 0.95rem;
 }
 
@@ -788,7 +678,6 @@ footer .boton p {
     background-color: #292929;
     visibility: hidden;
     transition: opacity 0.1s ease, visibility 0.1s ease;
-    pointer-events: none;
 }
 
 
@@ -826,13 +715,10 @@ footer .boton p {
 
 .rec_gris p {
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
 }
 
 .rec_gris h3 {
     margin: 0;
-    padding: 0;
     font-size: 1.1rem;
 }
 
@@ -845,8 +731,6 @@ footer .boton p {
     font-weight: bold;
     cursor: pointer;
     width: fit-content;
-    height: min-content;
-    font-size: 0.5rem;
 }
 
 
@@ -856,7 +740,6 @@ footer .boton p {
 
 .botonIniciarSesion {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -871,8 +754,6 @@ footer .boton p {
 }
 
 .botonIniciarSesion p {
-    padding: 0;
-    margin: 0;
     font-size: 1.1rem;
 }
 
@@ -882,12 +763,11 @@ footer .boton p {
 
 .info {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-top: 3.7rem;
-    padding-left: 0;
     padding-right: 1.5rem;
     padding-bottom: 2.5rem;
+    white-space: nowrap;
 }
 
 .textoColumna {
@@ -902,9 +782,7 @@ footer .boton p {
 
 .distribucionColumna {
     display: flex;
-    flex-direction: row;
-    gap: 11rem;
-    align-content: center;
+    gap: 6rem; /*en mi pc son 11rem*/
     justify-content: flex-start;
 }
 
@@ -916,14 +794,12 @@ footer .boton p {
 
 .columna h4 {
     margin: 0;
-    padding: 0;
     font-size: 1.15rem;
 }
 
 .columna p {
     color: #a0a0a0;
     margin: 0;
-    padding: 0;
     font-size: 1.1rem;
 }
 
@@ -951,13 +827,13 @@ footer .boton p {
 .menu {
         display: none;
 
-    }
-    .copywrite .avisoLegal, .copywrite .espanolEspana{
+}
+.copywrite .avisoLegal, .copywrite .espanolEspana{
         display: none;
-    }
-    .textoSpotify{
+}
+.textoSpotify{
         display: none;
-    }
+}
 
 
 /*móvil*/
@@ -969,9 +845,8 @@ footer .boton p {
         display: none;
     }
     footer{
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin:0.5rem;
+        margin-top: 0;
     }
     .info {
         flex-direction: column;
@@ -1027,11 +902,13 @@ footer .boton p {
         padding-left: 0.2rem;
         border-radius: 0;
     }
-   
+    .Spotify{
+        width: 2.3rem;
+    }
     .textoSpotify{
         display:flex;
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     #inicio{
         justify-content: flex-start;
@@ -1064,9 +941,7 @@ footer .boton p {
         font-size: 1rem
     }
     header{
-        padding-top: 0.8rem;
-        padding-bottom: 0.2rem;
-        padding-right: 0.8rem;
+        padding: 0.8rem 0.8rem 0.2rem 0;
     }
 }
 
@@ -1138,13 +1013,14 @@ footer .boton p {
     }
 
     .lupa {
-    width: 3.1rem; /* El mismo tamaño que el icono de inicio */
+    width: 3.1rem; 
     height: 3.1rem;
     padding: 0.07rem;
     border: 0;
     border-radius: 50%;
-    justify-content: center; /* Centramos el icono perfectamente */
-    background-color: #1f1f1f; /
+    justify-content: center; 
+    background-color: #1f1f1f; 
+    align-items: center;
     }
 
     .lupa:hover .atajos-teclado {
@@ -1170,7 +1046,6 @@ footer .boton p {
 
     .botonIniciarSesion {
         padding: 0.8rem 0.5rem;
-        height: fit-content;
         width: 7rem;
     }
 
@@ -1223,6 +1098,7 @@ footer .boton p {
     }
     .avisoLegal{
         gap: 0.5rem 1rem;
+        padding-right: 0;
     }
     .avisoLegal p{
         font-size: 0.75rem;
@@ -1233,10 +1109,6 @@ footer .boton p {
     }
     .barra_inferior{
         gap: 1rem;
-    }
-    
-    .barra_lateral{
-        height: 100%;
     }
     .copywrite .avisoLegal, .copywrite .espanolEspana{
         display: none;
