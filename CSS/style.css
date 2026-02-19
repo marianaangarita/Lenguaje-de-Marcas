@@ -1087,8 +1087,8 @@ footer .boton p {
     }
 
     footer .boton {
-        width: 7rem;
-        height: 1rem;
+        width: fit-content;
+        height: fit-content;
     }
 
     footer .boton p {
@@ -1252,13 +1252,17 @@ footer .boton p {
     }
     .titulo h2,
     .tituloTendencia h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    }
+    .titulo p,
+    .tituloTendencia p {
+    font-size: 0.9rem;
     }
     .titulo,
     .tituloTendencia {
     padding-right: 1rem;
     gap: 0.5rem;
-    padding-left: 0rem;
+    padding-left: 0.8rem;
     }
 }
 
