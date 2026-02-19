@@ -960,8 +960,14 @@ footer .boton p {
     .info {
         flex-direction: column;
         gap: 3rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
     }
-     .distribucionColumna {
+    .copywrite{
+        padding-bottom: 3.5rem;
+        padding-left: 1rem;
+    }
+    .distribucionColumna {
         flex-direction: column;
         gap: 3rem;
     }
@@ -969,7 +975,7 @@ footer .boton p {
     .rrss {
         justify-content: flex-start;
     }
-    .textDecoration:not(h3){
+    .textDecoration:not(h3):not(p){
         white-space: nowrap;
     }
     .iconosPremium{
@@ -991,15 +997,21 @@ footer .boton p {
     .tituloTendencia p {
         display: none;
     }
-     .copywrite .avisoLegal, .copywrite .espanolEspana{
+    .titulo{
+        padding-top: 1.7rem;
+    }
+    .titulo h2,
+    .tituloTendencia h2 {
+    font-size: 1.5rem;
+    }
+    .copywrite .avisoLegal, .copywrite .espanolEspana{
         display: flex;
     }
     .canciones{
-        padding-left: 1rem;
+        padding-left: 0.2rem;
+        border-radius: 0;
     }
-    .copywrite{
-        padding-bottom: 4.5rem;
-    }
+   
     .textoSpotify{
         display:flex;
         font-weight: bold;
@@ -1021,7 +1033,25 @@ footer .boton p {
     .texto h4{
         font-size: 1rem;
     }
-
+    body{
+        gap: 0.3rem;
+        padding: 0;
+    }
+    .cuadradoExtraGap{
+    padding-bottom: 2rem;
+    }
+    .botonIniciarSesion{
+        width: fit-content;
+        padding: 0.4rem 1rem;
+    }
+    .botonIniciarSesion p{
+        font-size: 1rem
+    }
+    header{
+        padding-top: 0.8rem;
+        padding-bottom: 0.2rem;
+        padding-right: 0.8rem;
+    }
 }
 
 
@@ -1149,6 +1179,7 @@ footer .boton p {
     .info {
         flex-direction: column;
         gap: 3rem;
+        padding-top: 2rem;
     }
 
     .distribucionColumna {
@@ -1159,7 +1190,7 @@ footer .boton p {
     .rrss {
         justify-content: flex-start;
     }
-    .textDecoration:not(h3){
+    .textDecoration:not(h3):not(p){
         white-space: nowrap;
     }
     .rec_gris p{
@@ -1185,7 +1216,7 @@ footer .boton p {
     .barra_lateral{
         height: 100%;
     }
-     .copywrite .avisoLegal, .copywrite .espanolEspana{
+    .copywrite .avisoLegal, .copywrite .espanolEspana{
         display: none;
     }
     .textoSpotify{
@@ -1193,6 +1224,9 @@ footer .boton p {
     }
     body{
         overflow: hidden;
+    }
+    .cuadradoExtraGap{
+    padding-bottom: 2rem;
     }
 }
    
