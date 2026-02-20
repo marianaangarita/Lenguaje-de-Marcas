@@ -50,7 +50,7 @@ main {
     font-size: 2rem;
 }
 
-.casa .material-symbols-outlined:focus{
+.casa .material-symbols-outlined:focus {
     font-variation-settings: 'FILL' 1;
     color: white;
 }
@@ -219,7 +219,7 @@ header {
     z-index: 100;
 }
 
-.instalar .material-symbols-outlined{
+.instalar .material-symbols-outlined {
     align-items: center;
     font-size: 1.29rem;
 }
@@ -294,7 +294,7 @@ footer {
     cursor: pointer;
 }
 
-footer .texto h4{
+footer .texto h4 {
     font-size: 0.85rem;
 }
 
@@ -583,9 +583,11 @@ footer .boton p {
     font-weight: bold;
     white-space: nowrap;
 }
-.espanolEspana .material-symbols-outlined{
+
+.espanolEspana .material-symbols-outlined {
     font-size: 1.4rem;
 }
+
 .espanolEspana:hover {
     border: 0.05rem solid rgb(243, 243, 243);
     transform: scale(1.05);
@@ -616,7 +618,7 @@ footer .boton p {
     padding: 0.2rem 1rem;
 }
 
-.botonCrear .material-symbols-outlined{
+.botonCrear .material-symbols-outlined {
     font-size: 1.25rem;
 }
 
@@ -675,15 +677,16 @@ footer .boton p {
     gap: 0.5rem;
 }
 
-.rec_gris .boton p{
+.rec_gris .boton p {
     font-size: 0.85rem;
 }
+
 .rec_gris p,
 .rec_gris h3 {
     margin: 0;
 }
 
-.rec_gris p{
+.rec_gris p {
     font-size: 0.9rem;
 }
 
@@ -745,7 +748,7 @@ footer .boton p {
 
 .distribucionColumna {
     display: flex;
-    gap: 7rem;  
+    gap: 7rem;
     justify-content: flex-start;
 }
 
@@ -803,122 +806,140 @@ footer .boton p {
 
 /* móvil */
 @media (max-width:600px) {
-    .barra_lateral,  footer .boton,  .iconosPremium,
-    .iconos,  .iconosCasa, .titulo p,
-    .tituloTendencia p{
+
+    .barra_lateral,
+    footer .boton,
+    .iconosPremium,
+    .iconos,
+    .iconosCasa,
+    .titulo p,
+    .tituloTendencia p {
         display: none;
     }
+
     .hr hr {
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     footer {
         margin: 0.5rem;
         margin-top: 0;
     }
-    
+
     .info {
         flex-direction: column;
         gap: 3rem;
         padding-top: 2rem;
         padding-left: 1rem;
     }
-    
+
     .copywrite {
         padding-bottom: 3.5rem;
         padding-left: 1rem;
         font-size: 0.85rem;
     }
-    
+
     .distribucionColumna {
         flex-direction: column;
         gap: 3rem;
     }
-    
+
     #inicio {
         justify-content: flex-start;
     }
-    
+
     .textDecoration:not(.cuadrado h3):not(.cuadrado p):not(.redondo h3):not(.redondo p) {
         white-space: nowrap;
     }
-    
+
     main {
         grid-template-columns: 1fr;
     }
-    
+
     .redondo img:not(.flechaVerde) {
         border-radius: 0.5rem;
     }
-    
+
     .titulo {
         padding-top: 1.7rem;
     }
-    
+
     .titulo h2,
     .tituloTendencia h2 {
         font-size: 1.5rem;
     }
-    
+
     .copywrite .avisoLegal,
-    .copywrite .espanolEspana,  .menu{
+    .copywrite .espanolEspana,
+    .menu {
         display: flex;
     }
-    
+
     .canciones {
         padding-left: 0.2rem;
         border-radius: 0;
     }
-    
+
     .Spotify {
         width: 2.3rem;
     }
-    
+
     .textoSpotify {
         display: flex;
         font-weight: bold;
         font-size: 1.3rem;
     }
-    
+
     .menu .material-symbols-outlined {
         font-size: 2.5rem;
         color: white;
     }
-    
+
     footer .texto h4 {
         font-size: 0.8rem;
     }
-    
+
     body {
         gap: 0.3rem;
         padding: 0;
     }
-    
+
     .cuadradoExtraGap {
         padding-bottom: 2rem;
     }
-    
+
     .botonIniciarSesion {
         width: fit-content;
-        padding: 0.4rem 1rem;
+        padding: 0.6rem 1rem;
     }
-    
+
     .botonIniciarSesion p {
         font-size: 1rem;
     }
-    
+
     header {
         padding: 0.8rem 0.8rem 0.2rem 0;
     }
+
     .columna h4 {
         font-size: 1.15rem;
     }
-    .columna p{
+
+    .columna p {
         font-size: 1.1rem;
     }
+
     .fondoIcono {
         width: 2.8rem;
         height: 2.8rem;
+    }
+    .avisoLegal p{
+        font-size: 0.8rem;
+    }
+    .brilloGris img{
+        width: 10rem;
+        height: 10rem;
     }
 
 }
@@ -928,16 +949,19 @@ footer .boton p {
     main {
         grid-template-columns: 1fr 2fr;
     }
+
     .casa .material-symbols-outlined {
         font-variation-settings: 'FILL' 0;
     }
-    .casa .material-symbols-outlined:hover{
-    font-variation-settings: 'FILL' 1;
-    color: white;
-}
-    .fondoIconoCasa{
+
+    .casa .material-symbols-outlined:hover {
+        font-variation-settings: 'FILL' 1;
+        color: white;
+    }
+
+    .fondoIconoCasa {
         width: 3.2rem;
-        height: 3.2rem;  
+        height: 3.2rem;
     }
 
     footer {
@@ -946,18 +970,19 @@ footer .boton p {
         padding-right: 0.8rem;
         border-radius: 0;
     }
-    
+
     footer .boton {
         height: fit-content;
         padding: 0.7rem 1.8rem 0.7rem 1.8rem;
     }
-    
+
     footer .boton p {
         font-size: 0.95rem;
     }
 
-    footer .texto h4, 
-    footer .texto p, footer .boton{
+    footer .texto h4,
+    footer .texto p,
+    footer .boton {
         width: fit-content;
     }
 
@@ -966,39 +991,45 @@ footer .boton p {
     }
 
 
-    footer .texto p{ 
+    footer .texto p {
         font-size: 0.9rem;
     }
-    
+
     .texto {
         max-width: 70%;
         box-sizing: border-box;
     }
-    
+
     #inicio {
         justify-content: flex-start;
         gap: 2rem;
     }
-    
+
     .Spotify {
         padding-left: 0.1rem;
     }
-    
-    .iconosPremium, .archivoPalo,
-    input, .vertical,  .botonCrear p, .copywrite .avisoLegal,
-    .copywrite .espanolEspana, .textoSpotify, .lupa:hover .atajos-teclado{
+
+    .iconosPremium,
+    .archivoPalo,
+    input,
+    .vertical,
+    .botonCrear p,
+    .copywrite .avisoLegal,
+    .copywrite .espanolEspana,
+    .textoSpotify,
+    .lupa:hover .atajos-teclado {
         display: none;
     }
-    
+
     .iconos {
         gap: 0.8rem;
     }
-    
+
     .instalar,
     .instalarRegistrar {
         font-size: 0.9rem;
     }
-    
+
     .lupa {
         width: 3.2rem;
         height: 3.2rem;
@@ -1007,124 +1038,136 @@ footer .boton p {
         justify-content: center;
         align-items: center;
     }
-    .lupaInput, .lupa:hover .atajos-teclado{
+
+    .lupaInput,
+    .lupa:hover .atajos-teclado {
         background-color: transparent;
     }
-    
+
     .lupaInput {
         width: auto;
         height: auto;
     }
-    
+
     .contenido h4 {
         white-space: nowrap;
     }
-    
+
     .contenido {
         padding-bottom: 0;
         padding-right: 1rem;
     }
-    
+
     .botonIniciarSesion {
         padding: 0.8rem 0.5rem;
         width: 7rem;
     }
-    
+
     .botonIniciarSesion p {
         font-size: 1rem;
     }
-    
     .botonCrear {
-        width: 2rem;
+        border-radius: 50%;
+        padding: 1.1rem 0.5rem;
+        height: 0;
     }
-    
+
     .menu {
         display: flex;
     }
-    
+
     .menu .material-symbols-outlined {
         font-size: 2rem;
         color: white;
     }
-    
+
     .brilloGris img {
         width: 10rem;
         height: 10rem;
     }
-    .info, .distribucionColumna{
+
+    .info,
+    .distribucionColumna {
         flex-direction: column;
         gap: 3rem;
     }
 
-    .info{
+    .info {
         padding-top: 2rem;
     }
-    
+
     .rrss {
         justify-content: flex-start;
     }
-    
+
     .textDecoration:not(.cuadrado h3):not(.cuadrado p):not(.redondo h3):not(.redondo p) {
         white-space: nowrap;
     }
-    
+
     .rec_gris p {
         font-size: 0.85rem;
     }
-    
+
     .rec_gris h3 {
         font-size: 0.95rem;
     }
-    
+
     .avisoLegal {
         gap: 0.5rem 1rem;
         padding-right: 1rem;
     }
-    
+
     .avisoLegal p {
         font-size: 0.75rem;
         white-space: nowrap;
     }
-    
+
     .espanolEspana p {
         font-size: 0.8rem;
     }
-    
+
     .barra_inferior {
         gap: 2.5rem;
     }
-    
+
     body {
         overflow: hidden;
     }
-    
+
     .cuadradoExtraGap {
         padding-bottom: 2rem;
     }
-    
+
     .titulo h2,
     .tituloTendencia h2 {
         font-size: 1.25rem;
     }
-    
+
     .titulo p,
     .tituloTendencia p {
         font-size: 0.9rem;
     }
-    
+
     .titulo,
     .tituloTendencia {
         padding-right: 1.5rem;
         gap: 0.5rem;
         padding-left: 0.8rem;
     }
-     .columna h4 {
+
+    .columna h4 {
         font-size: 1.15rem;
     }
-    .columna p{
+
+    .columna p {
         font-size: 1.1rem;
     }
-    .canciones{
+
+    .canciones {
         padding-top: 1.5rem;
+    }
+
+    .copywrite {
+        font-size: 1rem;
     }
 }
