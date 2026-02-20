@@ -1098,7 +1098,7 @@ footer .boton p {
     }
     .avisoLegal{
         gap: 0.5rem 1rem;
-        padding-right: 0;
+        padding-right: 1rem;
     }
     .avisoLegal p{
         font-size: 0.75rem;
