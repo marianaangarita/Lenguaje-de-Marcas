@@ -37,3 +37,5 @@ for (let i=0; i < tarjeta.length; i++){
         portada.src = imagenes[i];
     });
 };
+
+portada.style.maxHeight= "20rem";
