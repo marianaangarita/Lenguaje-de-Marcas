@@ -34,8 +34,16 @@ let imagenes = ["img/ratonV2.png", "img/pantallaV2.png", "img/hddV2.png", "img/p
 
 for (let i=0; i < tarjeta.length; i++){
     tarjeta[i].addEventListener("click", function(){
+        
         portada.src = imagenes[i];
     });
 };
 
 portada.style.maxHeight= "20rem";
+
+document.addEventListener("click", function(e) {
+    if (!e.target.closest(".card") && !e.target.closest(".navbar a")){
+        portada.src = "img/fondo.png"
+        mensaje.textContent = "";
+    }
+});
