@@ -30,7 +30,7 @@ for (let i=0; i < enlaces.length; i++) {
 let tarjeta = document.querySelectorAll(".card");
 let portada = document.querySelector(".inicio img");
 
-let imagenes = ["img/ratonV2.jpg", "img/pantallaV2.jpg", "img/hddV2.png", "img/portatilV3.jpg"]; 
+let imagenes = ["img/ratonV2.png", "img/pantallaV2.png", "img/hddV2.png", "img/portatilV3.png"]; 
 
 for (let i=0; i < tarjeta.length; i++){
     tarjeta[i].addEventListener("click", function(){
