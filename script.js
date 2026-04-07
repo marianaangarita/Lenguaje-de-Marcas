@@ -60,6 +60,10 @@ let regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 
 let regexDNI = /^\d{8}[A-HJ-NP-TV-Z]$/;
 
+let select = document.getElementById("opciones");
+
+let checkbox = document.getElementById("condiciones");
+
 
 formulario.addEventListener("submit", function(event){
     event.preventDefault();
@@ -81,8 +85,8 @@ formulario.addEventListener("submit", function(event){
         primeraContrasena.classList.remove("error");
         primeraContrasena.classList.add("ok");
     }
-    if(edad < 18){
-        error.textContent = "tienes que tener al menos 18 años";
+    if(edad.value < 18){
+        error.textContent = "Tienes que tener al menos 18 años";
         edad.classList.add("error");
     }
     else{
@@ -91,7 +95,7 @@ formulario.addEventListener("submit", function(event){
         edad.classList.add("ok");
     }
     if(! regexDNI.test(dni.value)){
-        error.textContent = "formato de DNI no válido";
+        error.textContent = "Formato de DNI no válido";
         dni.classList.add("error");
     }
     else{
@@ -100,13 +104,31 @@ formulario.addEventListener("submit", function(event){
         dni.classList.add("ok");
     }
     if(telefono.value.length != 9){
-        error.textContent = "número de caracteres no válido";
+        error.textContent = "Número de caracteres no válido";
         telefono.classList.add("error");
     }
     else{
         error.textContent = "";
         telefono.classList.remove("error");
         telefono.classList.add("ok");
+    }
+    if(select.value == ""){
+        error.textContent = "Debes pinchar una opción en el select";
+        select.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        select.classList.remove("error");
+        select.classList.add("ok");
+    }
+    if(checkbox.checked == false){
+        error.textContent = "Debes marcar una casilla en el checkbox";
+        checkbox.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        checkbox.classList.remove("error");
+        checkbox.classList.add("ok");
     }
 
 
