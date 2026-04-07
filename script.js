@@ -48,3 +48,66 @@ segundaContrasena.addEventListener("input", function(){
 
 let formulario = document.getElementById("formulario");
 
+let error = document.getElementById("errorValidacionFinal");
+
+let edad = document.getElementById("edad");
+
+let dni = document.getElementById("dni");
+
+let telefono = document.getElementById("telefono");
+
+let regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
+let regexDNI = /^\d{8}[A-HJ-NP-TV-Z]$/;
+
+
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+    if(! regexEmail.test(primerEmail.value)){
+        error.textContent = "El email no tiene la estructura adecuada, prueba a poner un @";
+        primerEmail.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        primerEmail.classList.remove("error");
+        primerEmail.classList.add("ok");
+    }
+    if(primeraContrasena.length < 6){
+        error.textContent = "La contraseña debe tener al menos 6 caracteres";
+        primeraContrasena.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        primeraContrasena.classList.remove("error");
+        primeraContrasena.classList.add("ok");
+    }
+    if(edad < 18){
+        error.textContent = "tienes que tener al menos 18 años";
+        error.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        error.classList.remove("error");
+        error.classList.add("ok");
+    }
+    if(! regexDNI.test(dni.value)){
+        error.textContent = "formato de DNI no válido";
+        dni.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        dni.classList.remove("error");
+        dni.classList.add("ok");
+    }
+    if(telefono.length != 9){
+        error.textContent = "número de caracteres no válido";
+        telefono.classList.add("error");
+    }
+    else{
+        error.textContent = "";
+        telefono.classList.remove("error");
+        telefono.classList.add("ok");
+    }
+
+
+});
