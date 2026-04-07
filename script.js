@@ -72,7 +72,7 @@ formulario.addEventListener("submit", function(event){
         primerEmail.classList.remove("error");
         primerEmail.classList.add("ok");
     }
-    if(primeraContrasena.length < 6){
+    if(primeraContrasena.value.length < 6){
         error.textContent = "La contraseña debe tener al menos 6 caracteres";
         primeraContrasena.classList.add("error");
     }
@@ -83,12 +83,12 @@ formulario.addEventListener("submit", function(event){
     }
     if(edad < 18){
         error.textContent = "tienes que tener al menos 18 años";
-        error.classList.add("error");
+        edad.classList.add("error");
     }
     else{
         error.textContent = "";
-        error.classList.remove("error");
-        error.classList.add("ok");
+        edad.classList.remove("error");
+        edad.classList.add("ok");
     }
     if(! regexDNI.test(dni.value)){
         error.textContent = "formato de DNI no válido";
@@ -99,7 +99,7 @@ formulario.addEventListener("submit", function(event){
         dni.classList.remove("error");
         dni.classList.add("ok");
     }
-    if(telefono.length != 9){
+    if(telefono.value.length != 9){
         error.textContent = "número de caracteres no válido";
         telefono.classList.add("error");
     }
