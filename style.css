@@ -1,12 +1,13 @@
 .error {
-            border: 2px solid red;
-        }
+        border: 2px solid red;
+}
 
-        .ok {
-            border: 2px solid green;
-        }
+.ok {
+    border: 2px solid green;
+}
 
-        .mensaje-error {
-            color: red;
-            font-size: 0.9em;
-        }
+.mensaje-error {
+        color: red;
+        font-size: 0.9em;
+        white-space: pre-line;
+}
