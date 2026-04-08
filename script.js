@@ -64,72 +64,82 @@ let select = document.getElementById("opciones");
 
 let checkbox = document.getElementById("condiciones");
 
+let terminos = document.querySelector('label[for="condiciones"]');
+
+
 
 formulario.addEventListener("submit", function(event){
+
     event.preventDefault();
+
+    let edadSinEspacios = edad.value.trim();
+    
+    let acumuladorMensajeError = "";
+    
     if(! regexEmail.test(primerEmail.value)){
-        error.textContent = "El email no tiene la estructura adecuada, prueba a poner un @";
+        acumuladorMensajeError += "Error Email: No tiene la estructura adecuada, prueba a poner un @ \n";
         primerEmail.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         primerEmail.classList.remove("error");
         primerEmail.classList.add("ok");
     }
     if(primeraContrasena.value.length < 6){
-        error.textContent = "La contraseña debe tener al menos 6 caracteres";
+        acumuladorMensajeError += "Error Contraseña: Debe tener al menos 6 caracteres \n";
         primeraContrasena.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         primeraContrasena.classList.remove("error");
         primeraContrasena.classList.add("ok");
     }
-    if(edad.value < 18){
-        error.textContent = "Tienes que tener al menos 18 años";
+    if (edadSinEspacios === "" || isNaN(edadSinEspacios) || Number(edadSinEspacios) < 18){
+        acumuladorMensajeError += "Error Edad: Tienes que tener al menos 18 años \n";
         edad.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         edad.classList.remove("error");
         edad.classList.add("ok");
     }
     if(! regexDNI.test(dni.value)){
-        error.textContent = "Formato de DNI no válido";
+        acumuladorMensajeError += " Error DNI: Formato de DNI no válido \n";
         dni.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         dni.classList.remove("error");
         dni.classList.add("ok");
     }
     if(telefono.value.length != 9){
-        error.textContent = "Número de caracteres no válido";
+        acumuladorMensajeError += "Error Teléfono: Número de caracteres no válido debe tener al menos 9 \n";
         telefono.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         telefono.classList.remove("error");
         telefono.classList.add("ok");
     }
     if(select.value == ""){
-        error.textContent = "Debes pinchar una opción en el select";
+        acumuladorMensajeError += "Error en Selecciona: Debes pinchar una opción en el select \n";
         select.classList.add("error");
     }
     else{
-        error.textContent = "";
+        acumuladorMensajeError += "";
         select.classList.remove("error");
         select.classList.add("ok");
     }
     if(checkbox.checked == false){
-        error.textContent = "Debes marcar una casilla en el checkbox";
-        checkbox.classList.add("error");
+        acumuladorMensajeError += "Error Checkbox: Debes marcar una casilla en el checkbox \n";
+        terminos.classList.add("error");
     }
     else{
-        error.textContent = "";
-        checkbox.classList.remove("error");
-        checkbox.classList.add("ok");
+        acumuladorMensajeError += "";
+        terminos.classList.remove("error");
+        terminos.classList.add("ok");
     }
 
+    error.textContent = acumuladorMensajeError;
 
 });

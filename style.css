@@ -9,4 +9,5 @@
 .mensaje-error {
         color: red;
         font-size: 0.9em;
+        white-space: pre-line;
 }
