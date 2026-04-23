@@ -1,145 +1,16 @@
-/*Vamos a añadir validación de forma exclusiva con Javasscript a un formulario (más adelante aprenderemos a combinar validación html + JS).
-Toma el html y CSS aportados para añadir el código JS requerido para hacer lo siguiente:
+async function cargarDatos() {
+    const response = await fetch("videojuegos.json");
+    const datos = await response.json();
 
-1) Se debe comprobar, mientras el usuario introduce caracteres, que el email introducido en el segundo campo es igual al introducido en el primer campo. Si no lo es, aprovecha el span inferior para añadir un mensaje de error. Si lo es, el mensaje de error desaparece.
-2) Se debe comprobar, mientras el usuario introduce caracteres, que la contraseña introducida en el segundo campo es igual la introducida en el primer campo. Si no lo es, aprovecha el span inferior para añadir un mensaje de error. Si lo es, el mensaje de error desaparece.
-3) Se debe comprobar, al enviar el formulario, las siguientes validaciones. Cualquiera que no la pase, se debe añadir como un texto en el span final, errorValidacionFinal:
-El email contiene una arroba.
-La contraseña tiene al menos seis caracteres.
-La edad es mayor que 18.
-El dni es válido. Usa el regex:  ^\d{8}[A-HJ-NP-TV-Z]$ 
-El teléfono tiene exactamente 9 caracteres.
-Se ha escogido una opción del select.
-Se ha marcado el check. Usa la propiedad .checked
-4) Cualquier campo de input que no pase la validación final del submit debe recibir un borde rojo. Las que sí la pasen deben recibir un borde verde. Aprovecha las clases existentes en el CSS.*/
+    const contenedor = document.getElementById("contenedor");
+    datos.videojuegos.froEach(videojuego => {
+        contenedor.innerHTML += `
+        <div>
+            <h2>${videojuego.titulo}</h2>
+            <p>Precio: ${videojuego.precio} €</p>
+        </div>
+        `;
+    });
+}
 
-
-let primerEmail = document.getElementById("email1");
-
-let segundoEmail = document.getElementById("email2");
-
-let errorEmail = document.getElementById("errorMail");
-
-segundoEmail.addEventListener("input", function(){
-
-    if( primerEmail.value != segundoEmail.value){
-        errorEmail.textContent = "El primer email no coincide con el segundo"
-    }
-    else{
-         errorEmail.textContent = ""
-    }
-});
-
-let primeraContrasena = document.getElementById("pass1");
-
-let segundaContrasena = document.getElementById("pass2");
-
-let errorContrasena = document.getElementById("errorPass");
-
-segundaContrasena.addEventListener("input", function(){
-
-    if( primeraContrasena.value != segundaContrasena.value){
-        errorContrasena.textContent = "El campo de repetir contraseña no coincide con la contraseña original"
-    }
-    else{
-         errorContrasena.textContent = ""
-    }
-});
-
-let formulario = document.getElementById("formulario");
-
-let error = document.getElementById("errorValidacionFinal");
-
-let edad = document.getElementById("edad");
-
-let dni = document.getElementById("dni");
-
-let telefono = document.getElementById("telefono");
-
-let regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-
-let regexDNI = /^\d{8}[A-HJ-NP-TV-Z]$/;
-
-let select = document.getElementById("opciones");
-
-let checkbox = document.getElementById("condiciones");
-
-let terminos = document.querySelector('label[for="condiciones"]');
-
-
-
-formulario.addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-    let edadSinEspacios = edad.value.trim();
-    
-    let acumuladorMensajeError = "";
-    
-    if(! regexEmail.test(primerEmail.value)){
-        acumuladorMensajeError += "Error Email: No tiene la estructura adecuada, prueba a poner un @ \n";
-        primerEmail.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        primerEmail.classList.remove("error");
-        primerEmail.classList.add("ok");
-    }
-    if(primeraContrasena.value.length < 6){
-        acumuladorMensajeError += "Error Contraseña: Debe tener al menos 6 caracteres \n";
-        primeraContrasena.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        primeraContrasena.classList.remove("error");
-        primeraContrasena.classList.add("ok");
-    }
-    if (edadSinEspacios === "" || isNaN(edadSinEspacios) || Number(edadSinEspacios) < 18){
-        acumuladorMensajeError += "Error Edad: Tienes que tener al menos 18 años \n";
-        edad.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        edad.classList.remove("error");
-        edad.classList.add("ok");
-    }
-    if(! regexDNI.test(dni.value)){
-        acumuladorMensajeError += " Error DNI: Formato de DNI no válido \n";
-        dni.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        dni.classList.remove("error");
-        dni.classList.add("ok");
-    }
-    if(telefono.value.length != 9){
-        acumuladorMensajeError += "Error Teléfono: Número de caracteres no válido debe tener al menos 9 \n";
-        telefono.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        telefono.classList.remove("error");
-        telefono.classList.add("ok");
-    }
-    if(select.value == ""){
-        acumuladorMensajeError += "Error en Selecciona: Debes pinchar una opción en el select \n";
-        select.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        select.classList.remove("error");
-        select.classList.add("ok");
-    }
-    if(checkbox.checked == false){
-        acumuladorMensajeError += "Error Checkbox: Debes marcar una casilla en el checkbox \n";
-        terminos.classList.add("error");
-    }
-    else{
-        acumuladorMensajeError += "";
-        terminos.classList.remove("error");
-        terminos.classList.add("ok");
-    }
-
-    error.textContent = acumuladorMensajeError;
-
-});
+cargarDatos();

@@ -1,0 +1,6 @@
+{
+    "videojuegos": [
+        {"titulo": "Minecraft", "precio": 26.95},
+        {"titulo": "Stardew Valley", "precio": 13.99}
+    ]
+}
