@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  width: 220px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
