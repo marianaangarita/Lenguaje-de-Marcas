@@ -1,0 +1,100 @@
+{
+    "canciones":[
+        {
+            "nombreCancion": "MVLAN",
+            "nombreArtista":[
+                "JC Reyes",
+                "YOVINGCHIMI"
+            ],
+            "src": "img/MVLAN.jpg"
+        },
+        {
+            "nombreCancion": "Aperture",
+            "nombreArtista": "HarryStyles",
+            "src": "img/aperture.jpg" 
+        },
+        {
+            "nombreCancion": "Que culpa tiene el lunes de no ser un...",
+            "nombreArtista": "GRECAS",
+            "src": "img/queCulpa.jpg"
+
+        },
+        {
+            "nombreCancion": "Que culpa tiene el lunes de no ser un...",
+            "nombreArtista": "GRECAS",
+            "src": "img/queCulpa.jpg"
+        },
+        {
+            "nombreCancion": "Inglés En Miami",
+            "nombreArtista": [
+                "Rawayana",
+                "Manuel Turizo"
+            ],
+            "src": "img/MiamiPortada.jpg"
+        },
+        {
+            "nombreCancion": "Por un Pendejo no se llora-Salud mi Reina",
+            "nombreArtista": "Manuel Turizo",
+            "src": "img/PorunPendejo.jpg"
+        },
+        {
+            "nombreCancion": "NO SÉ",
+            "nombreArtista": [
+                "Natos y Waor",
+                "Recycled J",
+                "Lia Kali",
+                "Hijos de la Ruina"
+            ],
+            "src": "img/NoSe.jpg"
+        },
+        {
+            "nombreCancion": "LA VILLA",
+            "nombreArtista": [
+                "Ryan Castro",
+                "Kapo",
+                "Gangsta"
+            ],
+            "src": "img/LaVilla.jpg"
+        },
+        {
+            "nombreCancion": "COQUETA",
+            "nombreArtista": [
+                "Fuerza Regida",
+                "Grupo Frontera"
+            ],
+            "src": "img/COQUETA.jpg"
+        },
+        {
+            "nombreCancion": "CAMBIARÉ",
+            "nombreArtista": [
+                "Luis Fonsi",
+                "Feid"
+            ],
+            "src": "img/cambiare.jpg"
+        },
+        {
+            "nombreCancion": "BIENVENIDA",
+            "nombreArtista": "Clarent",
+            "src": "img/Bienvenida.jpg"
+        },
+        {
+            "nombreCancion": "BOTA",
+            "nombreArtista": [
+                "LUDMILLA",
+                "Emilia",
+                "Latto"
+            ],
+            "src": "img/Bota.jpg"
+        },
+        {
+            "nombreCancion": "FIGURED YOU OUT",
+            "nombreArtista":"Devkota",
+            "src": "img/FiguredYouOut.jpg"
+        },
+        {
+            "nombreCancion": "Volando",
+            "nombreArtista":"Mora",
+            "src": "img/Volando.jpg"
+        }
+    ]
+}
