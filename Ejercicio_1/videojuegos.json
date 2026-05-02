@@ -4,29 +4,25 @@
       "titulo": "Minecraft",
       "genero": "Sandbox",
       "precio": 26.95,
-      "multijugador": true,
-      "modo": "Multijugador"
+      "multijugador": true
     },
     {
       "titulo": "Hollow Knight",
       "genero": "Metroidvania",
       "precio": 14.99,
-      "multijugador": false,
-      "modo": "Individual"
+      "multijugador": false
     },
     {
       "titulo": "Stardew Valley",
       "genero": "Simulación",
       "precio": 13.99,
-      "multijugador": true,
-      "modo": "Multijugador"
+      "multijugador": true
     },
     {
       "titulo": "Celeste",
       "genero": "Plataformas",
       "precio": 19.99,
-      "multijugador": false,
-      "modo": "Individual"
+      "multijugador": false
     }
   ]
 }

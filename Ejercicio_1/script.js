@@ -4,10 +4,14 @@ async function cargarVideojuegos() {
 
     const contenedor = document.getElementById("contenedor");
     datos.videojuegos.forEach(videojuego => {
+       
         contenedor.innerHTML += `
-        <div>
+        <div class="tarjeta">
             <h2>${videojuego.titulo}</h2>
-            <p>Precio: ${videojuego.precio} €</p>
+            <p><b>Género</b>: ${videojuego.genero} </p>
+            <p><b>Precio</b>: ${videojuego.precio} €</p>
+            <p><b>Modo</b>: ${videojuego.multijugador ? "Multijugador": "Individual"}</p>
+
         </div>
         `;
     });
