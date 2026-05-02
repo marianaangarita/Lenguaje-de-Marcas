@@ -13,20 +13,29 @@ function mostrarAlumnos(lista) {
 
     contenedor.textContent = "";
 
+    let colorFondo;
+
     lista.forEach(unAlumno => {
+
+        if(unAlumno.notaMedia >= 5){
+            colorFondo = "lightgreen";
+        }else{
+            colorFondo = "lightcoral";
+        }
+
         contenedor.innerHTML += `
-        <tr>
+        <tr style="background-color: ${colorFondo}">
             <td>
-                <b>Nombre: </b> ${unAlumno.nombre}
+                ${unAlumno.nombre}
             </td>
             <td>
-                <b>Edad: </b> ${unAlumno.edad}
+                ${unAlumno.edad}
             </td>
             <td>
-                <b>Curso: </b> ${unAlumno.curso}
+                ${unAlumno.curso}
             </td>
             <td>
-                <b>Nota Media: </b> ${unAlumno.notaMedia}
+                ${unAlumno.notaMedia}
             </td>
         </tr>
         `
@@ -34,11 +43,13 @@ function mostrarAlumnos(lista) {
 }
 
 document.getElementById("btnTodos").addEventListener("click", () => {
-
+    mostrarAlumnos(alumnos);
 });
 
 document.getElementById("btnAprobados").addEventListener("click", () => {
+    let aprobados = alumnos.filter(unAlumno => unAlumno.notaMedia >= 5);
 
+    mostrarAlumnos(aprobados);
 });
 
 cargarAlumnos();
