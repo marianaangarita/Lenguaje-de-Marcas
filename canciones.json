@@ -217,9 +217,17 @@
             "scrEmisoras": "img/EmisoraEstopa.jpg"
         },
         {
-            "artistas":["Con Viva Suecia2", "M-Clan", "Manolo Garcia..."],
-            "scrEmisoras": "img/EmisoraEstopa.jpg"
+            "artistas":["Con Viva Suecia", "Lori", "Meyers", "Mikel Izal y más"],
+            "scrEmisoras": "img/EmisoraArdeBogota.jpg"
         },
+        {
+            "artistas":["Con Amaral", "Pereza", "Pignoise y más"],
+            "scrEmisoras": "img/EmisoraMelendi.jpg"
+        },
+        {
+            "artistas":["Con Celtas Cortos", "Los Secretos", "El Último De L..."],
+            "scrEmisoras": "img/EmisoraFitoFitipaldis.jpg"
+        }
     ]
 
 
