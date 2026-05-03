@@ -1,5 +1,5 @@
 {
-    "canciones":[
+    "cancionesTendencia":[
         {
             "nombreCancion": "MVLAN",
             "nombreArtista":[
@@ -96,5 +96,131 @@
             "nombreArtista":"Mora",
             "src": "img/Volando.jpg"
         }
+    ],
+    "artistasPopulares":[
+        {
+            "nombreArtistaPopular":"Bad Bunny",
+            "srcPopular":"img/BadBunny.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Myke Towers",
+            "srcPopular":"img/MikeTowers.jpg"
+        },
+        {
+            "nombreArtistaPopular":"KAROL G",
+            "srcPopular":"img/KarolG.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Rauw Alejandro",
+            "srcPopular":"img/RauwAlejandro.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Quevedo",
+            "srcPopular":"img/Quevedo.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Mora",
+            "srcPopular":"img/Mora.jpg"
+        },
+        {
+            "nombreArtistaPopular":"JC Reyes",
+            "srcPopular":"img/JCReyes.jpg"
+        },
+        {
+            "nombreArtistaPopular":"W Sound",
+            "srcPopular":"img/WSound.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Ozuna",
+            "srcPopular":"img/Ozuna.jpg"
+        },
+        {
+            "nombreArtistaPopular":"Aitana",
+            "srcPopular":"img/Aitana.jpg"
+        }
+    ],
+    "albumesPopulares":[
+        {
+            "titulo": "DeBÍ TiRAR MáS FOToS",
+            "nombreArtista": "Bad Bunny",
+            "srcAlbum": "img/DebiTirarFotos.jpg"
+        },
+        {
+            "titulo": "LO MISMO DE SIEMPRE",
+            "nombreArtista": "Mora",
+            "srcAlbum": "img/LoMismoDeSiempre.jpg"
+        },
+        {
+            "titulo": "CUARTO AZUL",
+            "nombreArtista": "Aitana",
+            "srcAlbum": "img/CuartoAzul.jpg"
+        },
+        {
+            "titulo": "BUENAS NOCHES",
+            "nombreArtista": "Quevedo",
+            "srcAlbum": "img/BuenasNoches.jpg"
+        },
+        {
+            "titulo": "BORONDO",
+            "nombreArtista": "Beéle",
+            "srcAlbum": "img/Borondo.jpg"
+        },
+        {
+            "titulo": "Un Verano Sin Ti",
+            "nombreArtista": "Bad Bunny",
+            "srcAlbum": "img/UnVeranoSinTi.jpg"
+        },
+        {
+            "titulo": "NACER DE NUEVO",
+            "nombreArtista": "JC Reyes",
+            "srcAlbum": "img/NacerDeNuevo.jpg"
+        },
+        {
+            "titulo": "LA CIUDAD",
+            "nombreArtista": ["Alleh","Yorghaki"],
+            "srcAlbum": "img/LaCiudad.jpg"
+        },
+        {
+            "titulo": "Easy Money Baby",
+            "nombreArtista": "Myke Towers",
+            "srcAlbum": "img/EasyMoneyBaby.jpg"
+        },
+        {
+            "titulo": "PRIMERA MUSA",
+            "nombreArtista": "Omar Courtz",
+            "srcAlbum": "img/PrimeraMusa.jpg"
+        }
+    ],
+    "emisorasPopulares":[
+        {
+            "artistas":["Con Feid", "Manuel Turizo", "Shakira y más"],
+            "scrEmisoras": "img/EmisoraKarolG.jpg"           
+        },
+        {
+            "artistas":["Con Feid", "Arcángel", "KAROL G y más"],
+            "scrEmisoras": "img/EmisoraBadBunny.jpg" 
+        },
+        {
+            "artistas":["Con Adele", "Harry Styles", "Bruno Mars y más"],
+            "scrEmisoras": "img/EmisoraColdplay.jpg"
+        },
+        {
+            "artistas":["Con Ovy On The Drums", "Alleh", "Boza y más"],
+            "scrEmisoras": "img/EmisoraBeele.jpg"
+        },
+        {
+            "artistas":["Con Ed Sheeran", "Shawn", "Mendes", "Justin Bieber y..."],
+            "scrEmisoras": "img/EmisoraBrunoMars.jpg"
+        },
+        {
+            "artistas":["Con los Delinqüentes", "M-Clan", "Manolo Garcia..."],
+            "scrEmisoras": "img/EmisoraEstopa.jpg"
+        },
+        {
+            "artistas":["Con Viva Suecia2", "M-Clan", "Manolo Garcia..."],
+            "scrEmisoras": "img/EmisoraEstopa.jpg"
+        },
     ]
+
+
 }
