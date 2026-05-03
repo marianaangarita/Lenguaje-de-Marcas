@@ -187,49 +187,49 @@
     ],
     "emisorasPopulares":[
         {
-            "artistas":["Con Feid", "Manuel Turizo", "Shakira y más"],
+            "artistas":["Con Feid, Manuel Turizo, ", "Shakira y más"],
             "scrEmisoras": "img/EmisoraKarolG.jpg"           
         },
         {
-            "artistas":["Con Feid", "Arcángel", "KAROL G y más"],
+            "artistas":["Con Feid, Arcángel, ", "KAROL G y más"],
             "scrEmisoras": "img/EmisoraBadBunny.jpg" 
         },
         {
-            "artistas":["Con Adele", "Harry Styles", "Bruno Mars y más"],
+            "artistas":["Con Adele, Harry Styles, ", "Bruno Mars y más"],
             "scrEmisoras": "img/EmisoraColdplay.jpg"
         },
         {
-            "artistas":["Con Ovy On The Drums", "Alleh", "Boza y más"],
+            "artistas":["Con Ovy On The Drums, ", "Alleh, Boza y más"],
             "scrEmisoras": "img/EmisoraBeele.jpg"
         },
         {
-            "artistas":["Con Ed Sheeran", "Shawn", "Mendes", "Justin Bieber y..."],
+            "artistas":["Con Ed Sheeran, Shawn, ", "Mendes, Justin Bieber y..."],
             "scrEmisoras": "img/EmisoraBrunoMars.jpg"
         },
         {
-            "artistas":["Con los Delinqüentes", "M-Clan", "Manolo Garcia..."],
+            "artistas":["Con los Delinqüentes, ", "M-Clan, Manolo Garcia..."],
             "scrEmisoras": "img/EmisoraEstopa.jpg"
         },
         {
-            "artistas":["Con Viva Suecia", "Lori", "Meyers", "Mikel Izal y más"],
+            "artistas":["Con Viva Suecia, Lori, ", "Meyers, Mikel Izal y más"],
             "scrEmisoras": "img/EmisoraArdeBogota.jpg"
         },
         {
-            "artistas":["Con Amaral", "Pereza", "Pignoise y más"],
+            "artistas":["Con Amaral, Pereza, ", "Pignoise y más"],
             "scrEmisoras": "img/EmisoraMelendi.jpg"
         },
         {
-            "artistas":["Con Celtas Cortos", "Los Secretos", "El Último De L..."],
+            "artistas":["Con Celtas Cortos, Los Secretos, ", "El Último De L..."],
             "scrEmisoras": "img/EmisoraFitoFitipaldis.jpg"
         }
     ],
     "listasSeleccionadas":[
         {
-            "titulo":["Tu actualización semanal", "de las canciones más"],
+            "titulo":["Tu actualización semanal", "de las canciones más..."],
             "srcListas": "img/TopCancionesGlobal.png"
         },
         {
-            "titulo":["Tu actualización semanal", "de las canciones más"],
+            "titulo":["Tu actualización semanal", "de las canciones más..."],
             "srcListas": "img/TopCancionesespana.png"
         },
         {
