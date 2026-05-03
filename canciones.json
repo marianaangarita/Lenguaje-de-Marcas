@@ -230,7 +230,30 @@
         }
     ],
     "listasSeleccionadas":[
-        
+        {
+            "titulo":["Tu actualización semanal", "de las canciones más"],
+            "srcListas": "img/TopCancionesGlobal.png"
+        },
+        {
+            "titulo":["Tu actualización semanal", "de las canciones más"],
+            "srcListas": "img/TopCancionesespana.png"
+        },
+        {
+            "titulo":["Tu actualización diaria de", "las canciones más..."],
+            "srcListas": "img/Top50.jpg"
+        },
+        {
+            "titulo":["Tu actualización diaria de", "las canciones más..."],
+            "srcListas": "img/Top50Spain.jpg"
+        },
+        {
+            "titulo":["Tu actualización diaria de", "las canciones más virale..."],
+            "srcListas": "img/Viral50.jpg"
+        },
+        {
+            "titulo":["Tu actualización diaria de", "las canciones más virale..."],
+            "srcListas": "img/Viral50Spain.jpg"
+        }
     ]
 
 
