@@ -117,6 +117,52 @@ function listasSeleccionadas(lista){
     });
 }
 
+function formulario(datos){
+    let tituloFormulario = document.getElementById("titulo-formulario");
+    tituloFormulario.textContent = datos.login.titulo;
+
+    let tituloLabelemail = document.getElementById("label-email");
+    tituloLabelemail.textContent = datos.login.labelEmail;
+
+    let tituloLabelpass = document.getElementById("label-pass");
+    tituloLabelpass.textContent = datos.login.labelPassword;
+
+    let tituloBotonFormulario = document.getElementById("boton-formulario");
+    tituloBotonFormulario.textContent = datos.login.boton;
+
+    let formulario = document.getElementById("div-formulario");
+
+    let BotonInicio = document.getElementById("JSBotonInicioSesion");
+
+    BotonInicio.addEventListener("click", () => {
+
+        formulario.style.display ="flex";
+    });
+
+    BotonCrearLista = document.getElementById("JSCrearLista");
+
+    BotonCrearLista.addEventListener("click", () => {
+        formulario.style.display ="flex";
+
+    });
+
+    let BotonFlechaVerde = document.querySelectorAll(".flechaVerde");
+
+    for (let i=0; i < BotonFlechaVerde.length; i++){
+        BotonFlechaVerde[i].addEventListener("click", () => {
+        formulario.style.display ="flex";
+        });
+    };
+
+    document.addEventListener("click", function(e) {
+    if (!e.target.closest(BotonInicio) && !e.target.closest(BotonCrearLista)  && !e.target.closest(BotonFlechaVerde)){
+        
+        formulario.style.display ="none";
+    }
+});
+
+}
+
 
 async function cargarCanciones() {
     try{
@@ -138,14 +184,7 @@ async function cargarCanciones() {
         listasSeleccionadasDatos = datos.listasSeleccionadas;
         listasSeleccionadas(listasSeleccionadasDatos);
 
-        let tituloFormulario = document.getElementById("titulo-formulario");
-        tituloFormulario.textContent = datos.login.titulo;
-
-        let tituloLabelemail = document.getElementById("label-email");
-        tituloLabelemail = datos.login.labelEmail;
-
-        let tituloLabelpass = document.getElementById("label-pass");
-        tituloLabelpass = datos.login.labelPassword;
+        formulario(datos);
 
     } catch (error){
         console.error("Hubo un error cargando el JSON:", error);
