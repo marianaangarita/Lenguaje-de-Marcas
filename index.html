@@ -304,17 +304,19 @@
             <p>Registrarte gratis</p>
         </div>
     </footer>
-    <div class="formularios">
-                    <img class="Spotify" src="svg/Spotify_icon.svg" alt="Spotify">
-                    <h3>Recuperado mediante JSON</h3>
-                    <form id="formulario">
-                        <label for="email1">Email:</label><br>
-                        <input type="text" id="email1" name="email1"><br><br>
-                        <label for="email2">Repetir Email:</label><br>
-                        <input type="text" id="email2" name="email2">
-	                    <span id="errorMail" class="mensaje-error"></span><br><br>
-                    </form>
-            </div>
+    <div id="div-formulario">
+            <img class="Spotify" src="svg/Spotify_icon.svg" alt="Spotify">
+            <h2 id="titulo-formulario"></h2>
+            <form id="Rellenar-formulario">
+
+                <label id="label-email" for="email1"></label><br>
+                <input type="text" id="email1" name="email1"><br><br>
+                <label id="label-pass" for="pass1"></label><br>
+                <input type="password" id="pass1" name="pass1"><br><br>
+
+                <button type="submit"></button>
+            </form>
+    </div>
 
 </body>
 

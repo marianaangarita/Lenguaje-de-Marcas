@@ -138,6 +138,15 @@ async function cargarCanciones() {
         listasSeleccionadasDatos = datos.listasSeleccionadas;
         listasSeleccionadas(listasSeleccionadasDatos);
 
+        let tituloFormulario = document.getElementById("titulo-formulario");
+        tituloFormulario.textContent = datos.login.titulo;
+
+        let tituloLabelemail = document.getElementById("label-email");
+        tituloLabelemail = datos.login.labelEmail;
+
+        let tituloLabelpass = document.getElementById("label-pass");
+        tituloLabelpass = datos.login.labelPassword;
+
     } catch (error){
         console.error("Hubo un error cargando el JSON:", error);
     }
