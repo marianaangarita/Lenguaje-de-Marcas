@@ -248,7 +248,55 @@
             "titulo":["Tu actualización diaria de", "las canciones más virale..."],
             "srcListas": "img/Viral50Spain.jpg"
         }
-    ]
+    ],
+    "login": {
+    "titulo": "Hola de nuevo",
+    "labelEmail": "Correo electrónico",
+    "labelPassword": "Contraseña",
+    "boton": "Continuar"
+    },
+    "registro":[
+  {
+    "correo": "juan.perez@ejemplo.com",
+    "contrasena": "Password123!"
+  },
+  {
+    "correo": "maria.garcia@ejemplo.com",
+    "contrasena": "SecurePass456"
+  },
+  {
+    "correo": "carlos.lopez@ejemplo.com",
+    "contrasena": "Admin!2026"
+  },
+  {
+    "correo": "ana.martinez@ejemplo.com",
+    "contrasena": "Qwerty789#"
+  },
+  {
+    "correo": "luis.gomez@ejemplo.com",
+    "contrasena": "MySecretWord01"
+  },
+  {
+    "correo": "laura.torres@ejemplo.com",
+    "contrasena": "LetMeIn2026!"
+  },
+  {
+    "correo": "pedro.sanchez@ejemplo.com",
+    "contrasena": "P@ssword99"
+  },
+  {
+    "correo": "sofia.ruiz@ejemplo.com",
+    "contrasena": "SuperSafe#321"
+  },
+  {
+    "correo": "miguel.diaz@ejemplo.com",
+    "contrasena": "Welcome123!"
+  },
+  {
+    "correo": "elena.morales@ejemplo.com",
+    "contrasena": "TestUser@2026"
+  }
+]
 
 
 }
