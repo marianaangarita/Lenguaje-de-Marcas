@@ -155,14 +155,64 @@ function formulario(datos){
         });
     };
 
-    formulario.addEventListener("click", (e) => {
-         e.stopPropagation();
-    });
-
     document.addEventListener("click", function(e) {
     if (!e.target.closest("#div-formulario")) {
         formulario.style.display = "none";
     }
+    });
+
+    let emailInput = document.querySelector("#email1");
+    let contrasenaInput = document.querySelector("#pass1");
+
+    let listaUsuarios = datos.registro;
+
+    function validarUsuario(listaUsuarios, emailInput, contrasenaInput) {
+    const usuarioEncontrado = listaUsuarios.find(usuario => 
+        usuario.correo === emailInput && usuario.contrasena === contrasenaInput
+    );
+
+    return usuarioEncontrado; 
+    
+    }
+
+    formulario.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+
+    let form = document.getElementById("Rellenar-formulario");
+
+    let emailError = document.getElementById("emailSpan");
+
+    let passError = document.getElementById("passwordSpan");
+    
+    let errorGeneral = document.getElementById("ErrorGeneral");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (validarUsuario(listaUsuarios, emailInput.value, contrasenaInput.value)){
+
+            BotonInicio.textContent = "Cerrar Sesión";
+
+            formulario.style.display = "none";
+
+        }else {
+            if (emailInput.value == ""){
+                emailError.textContent = "Email Incorrecto";
+                emailError.style.color = "red";
+                emailError.style.fontWeight = "bold";
+            }
+            if (contrasenaInput.value == ""){
+                passError.textContent = "Contraseña Incorrecta";
+                passError.style.color = "red";
+                passError.style.fontWeight = "bold";
+            }
+            if (emailInput.value !== "" && contrasenaInput.value !== ""){
+                errorGeneral.textContent = "Usuario y contraseña no coinciden";
+                errorGeneral.style.color = "red";
+                errorGeneral.style.fontWeight = "bold";
+            }
+        }
     });
 
 }
