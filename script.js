@@ -190,6 +190,10 @@ function formulario(datos){
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        emailError.textContent = "";
+        passError.textContent = "";
+        errorGeneral.textContent = "";
+        
         if (validarUsuario(listaUsuarios, emailInput.value, contrasenaInput.value)){
 
             BotonInicio.textContent = "Cerrar Sesión";
@@ -197,12 +201,12 @@ function formulario(datos){
             formulario.style.display = "none";
 
         }else {
-            if (emailInput.value == ""){
+            if (emailInput.value === ""){
                 emailError.textContent = "Email Incorrecto";
                 emailError.style.color = "red";
                 emailError.style.fontWeight = "bold";
             }
-            if (contrasenaInput.value == ""){
+            if (contrasenaInput.value === ""){
                 passError.textContent = "Contraseña Incorrecta";
                 passError.style.color = "red";
                 passError.style.fontWeight = "bold";
