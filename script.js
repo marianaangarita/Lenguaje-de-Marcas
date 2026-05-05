@@ -190,6 +190,10 @@ function formulario(datos){
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        emailError.textContent = "";
+        passError.textContent = "";
+        errorGeneral.textContent = "";
+        
         if (validarUsuario(listaUsuarios, emailInput.value, contrasenaInput.value)){
 
             BotonInicio.textContent = "Cerrar Sesión";
