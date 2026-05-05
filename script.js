@@ -197,12 +197,12 @@ function formulario(datos){
             formulario.style.display = "none";
 
         }else {
-            if (emailInput.value == ""){
+            if (emailInput.value === ""){
                 emailError.textContent = "Email Incorrecto";
                 emailError.style.color = "red";
                 emailError.style.fontWeight = "bold";
             }
-            if (contrasenaInput.value == ""){
+            if (contrasenaInput.value === ""){
                 passError.textContent = "Contraseña Incorrecta";
                 passError.style.color = "red";
                 passError.style.fontWeight = "bold";
