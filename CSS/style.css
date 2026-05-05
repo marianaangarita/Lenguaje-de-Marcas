@@ -38,7 +38,7 @@ main {
 }
 
 
-#div-formulario {
+/*#div-formulario {
     display: none;
     position: fixed;
     top: 0;
@@ -48,6 +48,63 @@ main {
     background-color: gray;
     z-index: 1000;
     border-radius: 1rem;
+}*/
+
+#div-formulario {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#div-formulario img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#div-formulario h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+}
+
+#div-formulario label {
+    display: block;
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+
+#div-formulario input {
+    width: 100%;
+    background-color: white;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    color: black;
+    box-sizing: border-box;
+}
+
+#boton-formulario {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
 }
 .vertical {
     height: 1.5rem;

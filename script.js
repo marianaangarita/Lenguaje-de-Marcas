@@ -134,32 +134,36 @@ function formulario(datos){
 
     let BotonInicio = document.getElementById("JSBotonInicioSesion");
 
-    BotonInicio.addEventListener("click", () => {
-
+    BotonInicio.addEventListener("click", (e) => {
+        e.stopPropagation();
         formulario.style.display ="flex";
     });
 
     BotonCrearLista = document.getElementById("JSCrearLista");
 
-    BotonCrearLista.addEventListener("click", () => {
+    BotonCrearLista.addEventListener("click", (e) => {
+        e.stopPropagation();
         formulario.style.display ="flex";
-
     });
 
     let BotonFlechaVerde = document.querySelectorAll(".flechaVerde");
 
     for (let i=0; i < BotonFlechaVerde.length; i++){
-        BotonFlechaVerde[i].addEventListener("click", () => {
-        formulario.style.display ="flex";
+        BotonFlechaVerde[i].addEventListener("click", (e) => {
+            e.stopPropagation();
+            formulario.style.display ="flex";
         });
     };
 
+    formulario.addEventListener("click", (e) => {
+         e.stopPropagation();
+    });
+
     document.addEventListener("click", function(e) {
-    if (!e.target.closest(BotonInicio) && !e.target.closest(BotonCrearLista)  && !e.target.closest(BotonFlechaVerde)){
-        
-        formulario.style.display ="none";
+    if (!e.target.closest("#div-formulario")) {
+        formulario.style.display = "none";
     }
-});
+    });
 
 }
 
