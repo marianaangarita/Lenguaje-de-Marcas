@@ -58,13 +58,13 @@ async function formulario(){ //si vas a hcaer fetch la funcion tiene que ser asy
         }
         };
 
-        if (email.value === ""){ // para saber lo que escribe el usuario es muy importante que pongas .value sino no lo detecta
-
-            errorEmail.textContent = "Debes rellenar el campo email";
-
-        }else if (contrasena.value === ""){
+        if (contrasena.value === ""){ // para saber lo que escribe el usuario es muy importante que pongas .value sino no lo detecta
 
             errorContrasena.textContent = "Debes rellenar el campo contraseña";
+
+        }if (email.value === ""){ 
+
+            errorEmail.textContent = "Debes rellenar el campo email";
 
         }else if (!regex.test(email.value)){ 
 
