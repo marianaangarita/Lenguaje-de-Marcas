@@ -1,16 +1,86 @@
-function formulario(){
-    let iniciarSesion = document.getElementById("btn-acceso");
-    let modal = document.getElementById("modal-overlay");
-    let cerrar = document.getElementById("cerrar-modal");
+let iniciarSesion = document.getElementById("btn-acceso");
+
+let modal = document.getElementById("modal-overlay");
+
+let cerrar = document.getElementById("cerrar-modal");
+
+let errorEmail = document.querySelector(".msg-error-email");
+
+let email = document.getElementById("modal-email");
+
+let errorContrasena = document.querySelector(".msg-error-password");
+
+let contrasena = document.getElementById("modal-pass");
+
+let form = document.getElementById("form-login");
+
+let errorGeneral = document.getElementById("modal-error-general");
+
+let regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
+
+
+async function formulario(){
+    
+    const responseUsuarios = await fetch("data/usuarios.json");
+    const datosUsuarios = await responseUsuarios.json();
 
     iniciarSesion.addEventListener("click", function() {
-        modal.classList.remove("oculto");
+        modal.classList.remove("oculto"); //quitas una clase
     });
 
     cerrar.addEventListener("click", function() {
-        modal.classList.add("oculto");
+        modal.classList.add("oculto"); //añades una clase
     });
 
+    form.addEventListener("submit", function(e){ // se lo aplicamos al id del formulario
+
+        e.preventDefault();
+
+        errorContrasena.textContent = "";
+
+        errorEmail.textContent = "";
+
+        errorGeneral.textContent = "";
+
+        let matchEmail = false;
+
+        let matchContrasena = false;
+
+        for (let i = 0; i < datosUsuarios.usuarios.length; i++) {
+
+            if (datosUsuarios.usuarios[i].email == email.value && datosUsuarios.usuarios[i].password == contrasena.value){
+
+                matchEmail = true;
+                matchContrasena = true;
+            }
+        }
+
+        if (!regex.test(email.value)){
+
+            errorEmail.textContent = "Formato email no válido";
+
+        }else if (matchEmail && matchContrasena){
+
+            modal.classList.add("oculto");
+
+        }else{
+
+            if (email.value === ""){
+
+                errorEmail.textContent = "Debes rellenar el campo email";
+
+            }if (contrasena.value === ""){
+
+                errorContrasena.textContent = "Debes rellenar el campo contraseña";
+
+            }if (email.value !== "" && contrasena.value !== "") {
+
+                errorGeneral.textContent = "Usuario y contraseña no coinciden";
+            }
+        };
+
+    });
 }
 
 async function cargarCatalogo(){
